@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: rgb(2, 210, 247);
+}
+
+
+.sumbutton .btn {
+    border: 1px solid rgb(0, 162, 255);
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    background-color: rgb(0, 162, 255);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-decoration: none;
+    font-size: 1rem;
+    animation: form-btn 2s infinite;
+}
+
+@keyframes form-btn {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 162, 255, 0.452);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 162, 255, 0.144);
+    }
+}
+
+.sumbutton .btn:hover {
+    color: #000000;
+    background: rgb(0, 162, 255);
+    box-shadow: 0 0 20px 0rgba(0, 0, 0, 0, 0.3);
+}
+
+.navbar ul li a {
+    color: rgb(0, 0, 0) !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Roboto Condensed';
+}
+
+.navbar ul li .nav-link:hover {
+    color: #ffffff !important;
+}
+
+
+/*Start About Section css*/
+
+.about-sec {
+    width: 100%;
+    margin: 100px 0;
+    height: auto;
+    text-align: center;
+}
+
+.about-sec h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Abril Fatface', cursive;
+    color: rgba(177, 43, 43, 0.747);
+}
+
+.about-sec hr {
+    background: #0000005b;
+}
+
+.extra-div {
+    background: #fff;
+    border: medium none;
+    padding: 50px !important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.extra-div h2 {
+    font-size: 2rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+.extra-div p {
+    font-size: 1.4rem;
+}
+
+.about-sec img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+/*End About Section css*/
+
+
+/*Start search Section css*/
+
+.Search-Sec {
+    background-image: url(../img/img/search-img/back-car-silhouette-with-red-lights-dark-black-background_148087-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    align-content: center;
+    padding: 50px;
+}
+
+.Search-Sec .div-1 img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.Search-Sec .div-1 h1 {
+    color: rgb(255, 255, 255);
+}
+
+.Search-Sec .div-2 {
+    padding: 80px;
+}
+
+.Search-Sec .div-2 h1 {
+    color: #fff;
+    /* font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(2, 210, 247), rgb(255, 255, 255));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+.Search-Sec .div-2 .search-sec-button a {
+    border: 1px solid rgb(2, 210, 247);
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: rgb(2, 210, 247);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+.Search-Sec .div-2 .search-sec-button a:hover {
+    color: #000000;
+    background: rgb(2, 210, 247);
+    box-shadow: 0 0 20px 0rgba(0, 0, 0, 0, 0.3);
+}
+
+
+/*End search Section css*/
+
+
+/*Start Card Section css*/
+
+.card-group .card .card-body h5 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card-group .card .card-body .card-sec-button a {
+    border: 1px solid #000000;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 6px 10px;
+    outline: none;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+.card-group .card .card-body .card-sec-button a:hover {
+    color: #000000;
+    background: rgb(2, 210, 247);
+    border-color: rgb(2, 210, 247);
+    box-shadow: 0 0 20px 0rgba(0, 0, 0, 0, 0.3);
+}
+
+.card-group .card .card-body h5 span {
+    animation: cardanimate 1s linear infinite;
+}
+
+@keyframes cardanimate {
+    0%,
+    80% {
+        color: rgba(0, 0, 0, 0.404);
+        text-shadow: none;
+    }
+    100% {
+        color: #333;
+        text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 40px rgb(0, 0, 0), 0 0 80px rgb(0, 0, 0), 0 0 120px rgb(0, 0, 0), 0 0 160px rgb(0, 0, 0);
+    }
+}
+
+
+/*End Card Section css*/
+
+
+/*Start Add Section css*/
+
+.add-post-sec {
+    background-image: url(../img/img/advetesment/124036.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    align-content: center;
+    padding: 50px;
+}
+
+.add-post-sec .div-2 h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.add-post-sec .div-2 p {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 10;
+}
+
+.add-post-sec .div-1 {
+    padding: 80px;
+}
+
+.add-post-sec .div-1 h1 {
+    color: #fff;
+    /* font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(0, 0, 0), rgb(255, 255, 255));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animateadd 3s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+}
+
+@keyframes animateadd {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+.add-post-sec .div-1 .add-sec-button a {
+    border: 1px solid rgb(2, 210, 247);
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: rgb(2, 210, 247);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+.add-post-sec .div-1 .add-sec-button a:hover {
+    color: #000000;
+    background: rgb(2, 210, 247);
+    box-shadow: 0 0 20px 0rgba(0, 0, 0, 0, 0.3);
+}
+
+
+/*End search Section css*/
+
+
+/*Start Footer Section css*/
+
+.container-fluid {
+    background-image: url(../img/img/search-img/xc90-concrete-wall_landscape_1920x1080\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scrollUp {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+    background: crimson;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.scrollUp.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(-55px);
+}
+
+
+/*Add Post Page Css*/
+
+.add-photo-sec label {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.fom-sec label {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.check-box .lable-1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.check-box .form-check-label {
+    font-size: 1.3rem;
+}
+
+#form-navbar {
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+.add-photo-sec h1 {
+    font-family: 'Grandstander', cursive;
+    color: rgb(41, 43, 155);
+}
+
+.form-check .form-check-label {
+    font-size: 0.8rem;
+}
+  
+/*Buy car page*/
+.card-section .container {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card-section .container .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: rgb(255, 255, 255);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+.scrollUpButton {
+    display: none;
+    opacity: 0.6;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    background: rgb(0, 162, 255);
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+}
+
+.scrollUpButton:hover,
+.scrollUpButton:focus {
+    outline: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.card-section .container .card:hover {
+    height: 420px;
+}
+
+.card-section .container .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 5px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.2);
+}
+
+.card-section .container .card .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.card-section .container .card .content {
+    position: relative;
+    padding: 10px 15px;
+    margin-top: -20px;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.card-section .container .card:hover .content {
+    visibility: visible;
+    margin-top: -20px;
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.card-section a {
+    text-decoration: none;
+}
+
+.card-section .container .card .content h2 {
+    color: rgb(52, 52, 77);
+}
+
+@media screen and (max-width: 991px) {
+    .Search-Sec .div-1 img {
+        display: none;
+    }
+    .add-post-sec .div-1 {
+        margin-top: -50px;
+    }
+    .add-post-sec .div-2 h1 {
+        font-size: 2rem;
+    }
+    .add-post-sec .div-2 p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .add-post-sec .div-2 {
+        display: none;
+    }
+}
+.cc{
+	border-radius:10px;
+	margin-left:100px;
+}
