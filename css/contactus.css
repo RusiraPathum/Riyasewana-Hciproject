@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+    
+}
+
+.navbar {
+    background-color: rgb(2, 210, 247);
+}
+
+
+
+
+
+.navbar ul li a {
+    color: rgb(0, 0, 0) !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Roboto Condensed';
+}
+
+.navbar ul li .nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* The side navigation menu */
+
+.container h1{
+    font-weight: bold;
+
+}
+
+.container h4{
+    text-align: center;     
+}
+
+.fav{
+    background: #f9fafa65;
+    height: 1250px;
+}
+
+
+.sidebar {
+    font-weight: bold;
+    margin: 0;
+    padding: 16px;
+    width: 300px;
+    background-color: #f1f1f1;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(231, 230, 243, 0.281);
+    overflow-x: hidden;
+    padding-top: 16px;
+    /* border: 5px solid #e9e9e9;      */
+
+    flex: 1;
+    /* background-color: #ffffff; */
+    text-decoration: none;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.sidebar h5 {
+    font-weight: bold;
+}
+/* Sidebar links */
+.sidebar .form-inline {
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sidebar .form-inline input {
+    margin-top: 40px;
+    margin-left: 7px;
+    width: 50px;
+    align-items: center;
+    justify-content: center; 
+}
+
+.sidebar .form-inline1 input {
+    margin-top: 40px;
+    margin-left: 7px;
+    width: 215px;
+    align-items: center;
+    justify-content: center; 
+}
+/* .form-row input {
+    font-size: medium;
+} */
+
+
+
+.clear {
+    clear: both;    
+    border-bottom: 5px solid #5a80e965;
+}
+
+/**************************************************
+
+/* favorite */
+
+.books-header {
+    height: 300px;
+	width:1000px;
+    background-position:center;
+    background-color:white;
+	
+	
+}
+
+.books-header h1 {
+    padding-top: 20px;
+    font-size: 60px;
+}
+
+/* Books container */
+.books-container {
+    display: flex;
+}
+
+.books-container .box-1 {
+    flex: 1;
+    background-color: #ffffff;
+    text-decoration: none;
+    
+}
+.books-container .box-1 h5 {
+    font-weight: bold;
+}
+.books-container .box-1 .btn {
+    padding: 6px 8px 6px 16px;
+    width: 140px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 7px;
+    display: block;
+}
+
+.books-container .box-1 a:hover {
+    color: #2f64d6;
+}
+.books-container .box-1 ul {
+    list-style-type: none;
+}
+
+/* .books-container .box-1 inp {
+    padding-left: 15px; 
+} */
+
+.books-container .box-2 {
+    flex: 4;
+    background-color: #ffffff;
+    border-left: 5px solid #e9e9e9;
+}
+
+.books-container .box-2 .booksList {
+    overflow: auto;
+}
+
+.books-container .box-2 .img1 img {
+    width: 220px;
+    height: 230px;
+    float: left;
+    padding: 15px 0 15px 15px;
+}
+
+.books-container .box-2 .bookInfo {
+    float: left;
+    padding: 20px;
+}
+
+/* .books-container .box-2 .remove .btn {
+    margin-top: 700px;
+    
+} */
+
+.books-container .box-2 .bookInfo h3 {
+    padding-top: 0px;
+    font-size: 20px;
+}
+
+.books-container .box-2 .bookInfo span {
+    display: block;
+    overflow: hidden;
+    margin: 4px 0;
+}
+
+.books-container .box-2 .bookInfo .author {
+    font-size: 15px;
+    color: #9e9e9e;
+}
+
+.books-container .box-2 .bookInfo .price {
+    font-size: 20px;
+    color: #e74c3c;
+}
+
+.order-container-1 {
+    display: flex;
+}
+
+.order-container-1 .box-1 {
+    flex: 1;
+    background-color: #ffffff
+}
+
+.order-container-1 .box-2 {
+    flex: 4;
+    background-color: #ffffff;
+}
+
+
+/*End Card Section css*/
+
+
+
+
+
+
