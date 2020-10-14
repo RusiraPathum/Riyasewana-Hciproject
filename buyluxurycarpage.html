@@ -12,6 +12,7 @@
     <link href="./vender/bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet">
     <!-- Font Awesome icons (free version)-->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -36,10 +37,7 @@
                         <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="addpost.html">Post a Free Ad</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contribute</a>
@@ -47,6 +45,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Login</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="freeadd" href="addpost.html">Post FREE Vehicle AD</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -63,464 +65,491 @@
                 <!-- sideMenu -->
                 <div class="box-1">
                     <div class="msticky">
-                        <div class="group p-5 text-center">
+                        <h5 class="text-center"><b>Search Your Vehicle Here</b></h5>
+                        <div class="group p-5 text-left">
+                            <label class="text-black font-weight-bold" for="validationDefault04">Model <span
+                                    class="text-danger">*</span>
+                            </label>
                             <form class="form-inline my-2 my-lg-0 ">
-                                <input class="form-control mr-sm-2 mb-5" type="search" placeholder="Search"
-                                    aria-label="Search">
-                            </form>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2 mb-5" type="search" placeholder="Search"
-                                    aria-label="Search">
-                            </form>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2 mb-5" type="search" placeholder="Search"
-                                    aria-label="Search">
-                            </form>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2 mb-5" type="search" placeholder="Search"
-                                    aria-label="Search">
-                            </form>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2 mb-5" type="search" placeholder="Search"
-                                    aria-label="Search">
-                            </form>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2 mb-5" type="search" placeholder="Search"
-                                    aria-label="Search">
-                            </form>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2 mb-5" type="search" placeholder="Search"
-                                    aria-label="Search">
-                            </form>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2 mb-5" type="search" placeholder="Search"
-                                    aria-label="Search">
-                            </form>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2 mb-5" type="search" placeholder="Search"
-                                    aria-label="Search">
-                            </form>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2 mb-5" type="search" placeholder="Search"
-                                    aria-label="Search">
-                            </form>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2 mb-5" type="search" placeholder="Search"
-                                    aria-label="Search">
-                            </form>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2 mb-5" type="search" placeholder="Search"
-                                    aria-label="Search">
-                            </form>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
-                                    aria-label="Search">
-                            </form>
-                        </div>
-                        <div class="buton mr-5">
-                            <button class="btn btn-success my-2 my-sm-0 float-right"
-                                type="submit">Search</button>
-                        </div>
-                        <br><br><br><br>
 
+                                <input class="form-control mr-sm-2 mb-3" id="search" type="search" placeholder="Search"
+                                    aria-label="Search">
+                            </form>
+                            <form>
+                                <label class="text-black font-weight-bold" for="validationDefault04">Select City <span
+                                        class="text-danger">*</span>
+                                </label>
+                                <select class="custom-select mr-sm-2 mb-3" id="city">
+                                    <option selected Dropdown-item active="item">Any city</option>
+                                    <option class="item">Homagama</option>
+                                    <option class="item">Colombo</option>
+                                    <option class="item">Kaduwela</option>
+                                    <option class="item">Malabe</option>
+                                    <option class="item">Hanwella</option>
+                                    <option class="item">Badulla</option>
+                                    <option class="item">Kelaniya</option>
+                                    <option class="item">Galle</option>
+                                    <option class="item">Matara</option>
+                                </select>
+                            </form>
+                            <form>
+                                <label class="text-black font-weight-bold" for="validationDefault04">Select Type <span
+                                        class="text-danger">*</span>
+                                </label>
+                                <select class="custom-select mr-sm-2 mb-3" id="vehicleType">
+                                    <option selected Dropdown-item active="item">Any type</option>
+                                    <option class="item">Car</option>
+                                    <option class="item">Van</option>
+                                    <option class="item">Morterbike</option>
+                                    <option class="item">SUV</option>
+                                    <option class="item">Lorry</option>
+                                    <option class="item">Bus</option>
+                                    <option class="item">Truck</option>
+                                    <option class="item">Three Weel</option>
+                                </select>
+                            </form>
+                            <form>
+                                <label class="text-black font-weight-bold" for="validationDefault04">Select Condition
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <select class="custom-select mr-sm-2 mb-3" id="vehicleType">
+                                    <option selected Dropdown-item active="item">Any conditon</option>
+                                    <option class="item">Brand New</option>
+                                    <option class="item">Used</option>
+                                    <option class="item">Unregistered</option>
+                                    <option class="item">Registered</option>
+                                    <option class="item">Antiqeu</option>
+                                </select>
+                            </form>
+                            <form>
+                                <label class="text-black font-weight-bold" for="validationDefault04">Select Brand <span
+                                        class="text-danger">*</span>
+                                </label>
+                                <select class="custom-select mr-sm-2 mb-3" id="vehicleType">
+                                    <option selected Dropdown-item active="item">Any brand</option>
+                                    <option class="item">Honda</option>
+                                    <option class="item">Toyota</option>
+                                    <option class="item">BMW</option>
+                                    <option class="item">Benz</option>
+                                    <option class="item">Land Rover</option>
+                                    <option class="item">Susuki</option>
+                                    <option class="item">Yamaha</option>
+                                    <option class="item">KIA</option>
+                                    <option class="item">Bajaj</option>
+                                    <option class="item">Kawasaki</option>
+                                    <option class="item">TVS</option>
+                                    <option class="item">Isusu</option>
+                                    <option class="item">Leyland</option>
+                                    <option class="item">Tata</option>
+                                    <option class="item">Mahendra</option>
+                                </select>
+                            </form>
+                            <form>
+                                <label class="text-black font-weight-bold" for="validationDefault04">Select Fuel<span
+                                        class="text-danger">*</span>
+                                </label>
+                                <select class="custom-select mr-sm-2 mb-3" id="vehicleType">
+                                    <option selected Dropdown-item active="item">Any fuel</option>
+                                    <option class="item">Diesal</option>
+                                    <option class="item">Petrol</option>
+                                    <option class="item">Electric</option>
+                                    <option class="item">Hybrid</option>
+                                </select>
+                            </form>
+                            <form>
+                                <label class="text-black font-weight-bold" for="validationDefault04">Select Gear <span
+                                        class="text-danger">*</span></label>
+                                <select class="custom-select mr-sm-2 mb-3" id="vehicleCondition">
+                                    <option selected Dropdown-item active="item">Any gear</option>
+                                    <option>Auto</option>
+                                    <option>Manual</option>
+                                </select>
+                            </form>
+                            <form>
+                                <label class="text-black font-weight-bold" for="validationDefault04">Year<span
+                                        class="text-danger">*</span></label></label>
+                                <div class="form-row">
+
+                                    <div class="col-md-5">
+                                        <form">
+                                            <input class="form-control mr-sm-2 mb-1" id="min" type="search"
+                                                placeholder="year min" aria-label="Search">
+                            </form>
+                        </div>
+
+                        <div class="col-md-5">
+                            <form>
+                                <input class="form-control mr-sm-2 mb-1" id="max" type="search" placeholder="year max"
+                                    aria-label="Search">
+                            </form>
+                        </div>
                     </div>
+                    </form>
                 </div>
-
-                <div class="box-2">
-                    <div class="booksList">
-                        <div class="topic">
-                            <h1>BUY LUXURY CAR</h1>
-                            <hr>
-                        </div>
-
-                        <!--Start Card Section -->
-                        <section class="container mt-5 mb-5">
-                            <div class="card-group mt-5">
-                                <div class="card shadow m-2">
-                                    <a href="add1.html">
-                                        <div class="card card-cascade card-ecommerce">
-                                            <!--Card image-->
-                                            <div class="view view-cascade overlay">
-                                                <img class="card-img-top"
-                                                    src="./img/img/buycarpage/img15.jpg"
-                                                    alt="">
-                                                <a>
-                                                    <div class="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                            <!--/.Card image-->
-                                            <!--Card content-->
-                                            <div class="card-body card-body-cascade text-center">
-                                                <!--Category & Title-->
-                                                <h5>Toyota Allion 260 2007 Car</h5>
-                                                <!--Description-->
-                                                <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
-                                                    aut
-                                                    rerum
-                                                    necessitatibus saepe
-                                                    eveniet ut et voluptates.
-                                                </p>
-                                                <!--Card footer-->
-                                                <div class="card-footer">
-                                                    <span class="float-left">49$ <span
-                                                            class="discount">199$</span></span>
-                                                    <span class="float-right"><a class="" data-toggle="tooltip"
-                                                            data-placement="top" title="Add to Wishlist"><i
-                                                                class="fas fa-heart"></i></a></span>
-                                                </div>
-                                            </div>
-                                            <!--/.Card content-->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card shadow m-2">
-                                    <a href="add1.html">
-                                        <div class="card card-cascade card-ecommerce">
-                                            <!--Card image-->
-                                            <div class="view view-cascade overlay">
-                                                <img class="card-img-top"
-                                                    src="./img/img/buycarpage/img16.jpg"
-                                                    alt="">
-                                                <a>
-                                                    <div class="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                            <!--/.Card image-->
-                                            <!--Card content-->
-                                            <div class="card-body card-body-cascade text-center">
-                                                <!--Category & Title-->
-                                                <h5>Honda Civic Es3 Rs 2000 Car</h5>
-                                                <!--Description-->
-                                                <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
-                                                    aut
-                                                    rerum
-                                                    necessitatibus saepe
-                                                    eveniet ut et voluptates.
-                                                </p>
-                                                <!--Card footer-->
-                                                <div class="card-footer">
-                                                    <span class="float-left">49$ <span
-                                                            class="discount">199$</span></span>
-                                                    <span class="float-right"><a class="" data-toggle="tooltip"
-                                                            data-placement="top" title="Add to Wishlist"><i
-                                                                class="fas fa-heart"></i></a></span>
-                                                </div>
-                                            </div>
-                                            <!--/.Card content-->
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-group mt-5">
-                                <div class="card shadow m-2">
-                                    <a href="add1.html">
-                                        <div class="card card-cascade card-ecommerce">
-                                            <!--Card image-->
-                                            <div class="view view-cascade overlay">
-                                                <img class="card-img-top"
-                                                    src="./img/img/buycarpage/img13.jpg"
-                                                    alt="">
-                                                <a>
-                                                    <div class="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                            <!--/.Card image-->
-                                            <!--Card content-->
-                                            <div class="card-body card-body-cascade text-center">
-                                                <!--Category & Title-->
-                                                <h5>Hyundai Tucson 2011 SUV</h5>
-                                                <!--Description-->
-                                                <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
-                                                    aut
-                                                    rerum
-                                                    necessitatibus saepe
-                                                    eveniet ut et voluptates.
-                                                </p>
-                                                <!--Card footer-->
-                                                <div class="card-footer">
-                                                    <span class="float-left">49$ <span
-                                                            class="discount">199$</span></span>
-                                                    <span class="float-right"><a class="" data-toggle="tooltip"
-                                                            data-placement="top" title="Add to Wishlist"><i
-                                                                class="fas fa-heart"></i></a></span>
-                                                </div>
-                                            </div>
-                                            <!--/.Card content-->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card shadow m-2">
-                                    <a href="add1.html">
-                                        <div class="card card-cascade card-ecommerce">
-                                            <!--Card image-->
-                                            <div class="view view-cascade overlay">
-                                                <img class="card-img-top"
-                                                    src="./img/img/buycarpage/img12.jpg"
-                                                    alt="">
-                                                <a>
-                                                    <div class="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                            <!--/.Card image-->
-                                            <!--Card content-->
-                                            <div class="card-body card-body-cascade text-center">
-                                                <!--Category & Title-->
-                                                <h5>Perodua Viva Elite 2011 Car</h5>
-                                                <!--Description-->
-                                                <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
-                                                    aut
-                                                    rerum
-                                                    necessitatibus saepe
-                                                    eveniet ut et voluptates.
-                                                </p>
-                                                <!--Card footer-->
-                                                <div class="card-footer">
-                                                    <span class="float-left">49$ <span
-                                                            class="discount">199$</span></span>
-                                                    <span class="float-right"><a class="" data-toggle="tooltip"
-                                                            data-placement="top" title="Add to Wishlist"><i
-                                                                class="fas fa-heart"></i></a></span>
-                                                </div>
-                                            </div>
-                                            <!--/.Card content-->
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-group mt-5">
-                                <div class="card shadow m-2">
-                                    <a href="add1.html">
-                                        <div class="card card-cascade card-ecommerce">
-                                            <!--Card image-->
-                                            <div class="view view-cascade overlay">
-                                                <img class="card-img-top"
-                                                    src="./img/img/buycarpage/img11.jpg"
-                                                    alt="">
-                                                <a>
-                                                    <div class="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                            <!--/.Card image-->
-                                            <!--Card content-->
-                                            <div class="card-body card-body-cascade text-center">
-                                                <!--Category & Title-->
-                                                <h5>Toyota Axio G Grade 2015 Car</h5>
-                                                <!--Description-->
-                                                <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
-                                                    aut
-                                                    rerum
-                                                    necessitatibus saepe
-                                                    eveniet ut et voluptates.
-                                                </p>
-                                                <!--Card footer-->
-                                                <div class="card-footer">
-                                                    <span class="float-left">49$ <span
-                                                            class="discount">199$</span></span>
-                                                    <span class="float-right"><a class="" data-toggle="tooltip"
-                                                            data-placement="top" title="Add to Wishlist"><i
-                                                                class="fas fa-heart"></i></a></span>
-                                                </div>
-                                            </div>
-                                            <!--/.Card content-->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card shadow m-2">
-                                    <a href="add1.html">
-                                        <div class="card card-cascade card-ecommerce">
-                                            <!--Card image-->
-                                            <div class="view view-cascade overlay">
-                                                <img class="card-img-top"
-                                                    src="./img/img/buycarpage/img10.jpg"
-                                                    alt="">
-                                                <a>
-                                                    <div class="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                            <!--/.Card image-->
-                                            <!--Card content-->
-                                            <div class="card-body card-body-cascade text-center">
-                                                <!--Category & Title-->
-                                                <h5>Honda N Wgn Cbe 2016 Car</h5>
-                                                <!--Description-->
-                                                <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
-                                                    aut
-                                                    rerum
-                                                    necessitatibus saepe
-                                                    eveniet ut et voluptates.
-                                                </p>
-                                                <!--Card footer-->
-                                                <div class="card-footer">
-                                                    <span class="float-left">49$ <span
-                                                            class="discount">199$</span></span>
-                                                    <span class="float-right"><a class="" data-toggle="tooltip"
-                                                            data-placement="top" title="Add to Wishlist"><i
-                                                                class="fas fa-heart"></i></a></span>
-                                                </div>
-                                            </div>
-                                            <!--/.Card content-->
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-group mt-5">
-                                <div class="card shadow m-2">
-                                    <a href="add1.html">
-                                        <div class="card card-cascade card-ecommerce">
-                                            <!--Card image-->
-                                            <div class="view view-cascade overlay">
-                                                <img class="card-img-top"
-                                                    src="./img/img/buycarpage/img4.jpg"
-                                                    alt="">
-                                                <a>
-                                                    <div class="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                            <!--/.Card image-->
-                                            <!--Card content-->
-                                            <div class="card-body card-body-cascade text-center">
-                                                <!--Category & Title-->
-                                                <h5>Toyota Aqua 2012 Car</h5>
-                                                <!--Description-->
-                                                <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
-                                                    aut
-                                                    rerum
-                                                    necessitatibus saepe
-                                                    eveniet ut et voluptates.
-                                                </p>
-                                                <!--Card footer-->
-                                                <div class="card-footer">
-                                                    <span class="float-left">49$ <span
-                                                            class="discount">199$</span></span>
-                                                    <span class="float-right"><a class="" data-toggle="tooltip"
-                                                            data-placement="top" title="Add to Wishlist"><i
-                                                                class="fas fa-heart"></i></a></span>
-                                                </div>
-                                            </div>
-                                            <!--/.Card content-->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card shadow m-2">
-                                    <a href="add1.html">
-                                        <div class="card card-cascade card-ecommerce">
-                                            <!--Card image-->
-                                            <div class="view view-cascade overlay">
-                                                <img class="card-img-top"
-                                                    src="./img/img/buycarpage/img11.jpg"
-                                                    alt="">
-                                                <a>
-                                                    <div class="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                            <!--/.Card image-->
-                                            <!--Card content-->
-                                            <div class="card-body card-body-cascade text-center">
-                                                <!--Category & Title-->
-                                                <h5>Suzuki Wagon R 2015 Car</h5>
-                                                <!--Description-->
-                                                <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
-                                                    aut
-                                                    rerum
-                                                    necessitatibus saepe
-                                                    eveniet ut et voluptates.
-                                                </p>
-                                                <!--Card footer-->
-                                                <div class="card-footer">
-                                                    <span class="float-left">49$ <span
-                                                            class="discount">199$</span></span>
-                                                    <span class="float-right"><a class="" data-toggle="tooltip"
-                                                            data-placement="top" title="Add to Wishlist"><i
-                                                                class="fas fa-heart"></i></a></span>
-                                                </div>
-                                            </div>
-                                            <!--/.Card content-->
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-group mt-5">
-                                <div class="card shadow m-2">
-                                    <a href="add1.html">
-                                        <div class="card card-cascade card-ecommerce">
-                                            <!--Card image-->
-                                            <div class="view view-cascade overlay">
-                                                <img class="card-img-top"
-                                                    src="./img/img/buycarpage/img15.jpg"
-                                                    alt="">
-                                                <a>
-                                                    <div class="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                            <!--/.Card image-->
-                                            <!--Card content-->
-                                            <div class="card-body card-body-cascade text-center">
-                                                <!--Category & Title-->
-                                                <h5>Toyota Premio 2010 Car</h5>
-                                                <!--Description-->
-                                                <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
-                                                    aut
-                                                    rerum
-                                                    necessitatibus saepe
-                                                    eveniet ut et voluptates.
-                                                </p>
-                                                <!--Card footer-->
-                                                <div class="card-footer">
-                                                    <span class="float-left">49$ <span
-                                                            class="discount">199$</span></span>
-                                                    <span class="float-right"><a class="" data-toggle="tooltip"
-                                                            data-placement="top" title="Add to Wishlist"><i
-                                                                class="fas fa-heart"></i></a></span>
-                                                </div>
-                                            </div>
-                                            <!--/.Card content-->
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card shadow m-2">
-                                    <a href="add1.html">
-                                        <div class="card card-cascade card-ecommerce">
-                                            <!--Card image-->
-                                            <div class="view view-cascade overlay">
-                                                <img class="card-img-top"
-                                                    src="./img/img/buycarpage/img11.jpg"
-                                                    alt="">
-                                                <a>
-                                                    <div class="mask rgba-white-slight"></div>
-                                                </a>
-                                            </div>
-                                            <!--/.Card image-->
-                                            <!--Card content-->
-                                            <div class="card-body card-body-cascade text-center">
-                                                <!--Category & Title-->
-                                                <h5>Suzuki Wagon R 2015 Car</h5>
-                                                <!--Description-->
-                                                <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
-                                                    aut
-                                                    rerum
-                                                    necessitatibus saepe
-                                                    eveniet ut et voluptates.
-                                                </p>
-                                                <!--Card footer-->
-                                                <div class="card-footer">
-                                                    <span class="float-left">49$ <span
-                                                            class="discount">199$</span></span>
-                                                    <span class="float-right"><a class="" data-toggle="tooltip"
-                                                            data-placement="top" title="Add to Wishlist"><i
-                                                                class="fas fa-heart"></i></a></span>
-                                                </div>
-                                            </div>
-                                            <!--/.Card content-->
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </section>
-                        <!--End Card Section -->
-                    </div>
+                <div class="buton mr-5">
+                    <button class="btn btn-info my-2 my-sm-0 float-right" type="submit"
+                        onclick="popUp()">Search</button>
                 </div>
+                <br><br><br><br>
+
             </div>
-        </section>
+    </div>
+
+    <div class="box-2">
+        <div class="booksList">
+            <div class="topic">
+                <h1>BUY LUXURY CAR</h1>
+                <hr>
+            </div>
+
+            <!--Start Card Section -->
+            <section class="container mt-5 mb-5">
+                <div class="card-group mt-5">
+                    <div class="card shadow m-2">
+                        <a href="add1.html">
+                            <div class="card card-cascade card-ecommerce">
+                                <!--Card image-->
+                                <div class="view view-cascade overlay">
+                                    <img class="card-img-top" src="./img/img/buycarpage/img15.jpg" alt="">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+                                <!--Card content-->
+                                <div class="card-body card-body-cascade text-center">
+                                    <!--Category & Title-->
+                                    <h5>Toyota Allion 260 2007 Car</h5>
+                                    <!--Description-->
+                                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
+                                        aut
+                                        rerum
+                                        necessitatibus saepe
+                                        eveniet ut et voluptates.
+                                    </p>
+                                    <!--Card footer-->
+                                    <div class="card-footer">
+                                        <span class="float-left">49$ <span class="discount">199$</span></span>
+                                        <span class="float-right"><a class="" data-toggle="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a></span>
+                                    </div>
+                                </div>
+                                <!--/.Card content-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card shadow m-2">
+                        <a href="add1.html">
+                            <div class="card card-cascade card-ecommerce">
+                                <!--Card image-->
+                                <div class="view view-cascade overlay">
+                                    <img class="card-img-top" src="./img/img/buycarpage/img16.jpg" alt="">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+                                <!--Card content-->
+                                <div class="card-body card-body-cascade text-center">
+                                    <!--Category & Title-->
+                                    <h5>Honda Civic Es3 Rs 2000 Car</h5>
+                                    <!--Description-->
+                                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
+                                        aut
+                                        rerum
+                                        necessitatibus saepe
+                                        eveniet ut et voluptates.
+                                    </p>
+                                    <!--Card footer-->
+                                    <div class="card-footer">
+                                        <span class="float-left">49$ <span class="discount">199$</span></span>
+                                        <span class="float-right"><a class="" data-toggle="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a></span>
+                                    </div>
+                                </div>
+                                <!--/.Card content-->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-group mt-5">
+                    <div class="card shadow m-2">
+                        <a href="add1.html">
+                            <div class="card card-cascade card-ecommerce">
+                                <!--Card image-->
+                                <div class="view view-cascade overlay">
+                                    <img class="card-img-top" src="./img/img/buycarpage/img13.jpg" alt="">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+                                <!--Card content-->
+                                <div class="card-body card-body-cascade text-center">
+                                    <!--Category & Title-->
+                                    <h5>Hyundai Tucson 2011 SUV</h5>
+                                    <!--Description-->
+                                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
+                                        aut
+                                        rerum
+                                        necessitatibus saepe
+                                        eveniet ut et voluptates.
+                                    </p>
+                                    <!--Card footer-->
+                                    <div class="card-footer">
+                                        <span class="float-left">49$ <span class="discount">199$</span></span>
+                                        <span class="float-right"><a class="" data-toggle="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a></span>
+                                    </div>
+                                </div>
+                                <!--/.Card content-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card shadow m-2">
+                        <a href="add1.html">
+                            <div class="card card-cascade card-ecommerce">
+                                <!--Card image-->
+                                <div class="view view-cascade overlay">
+                                    <img class="card-img-top" src="./img/img/buycarpage/img12.jpg" alt="">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+                                <!--Card content-->
+                                <div class="card-body card-body-cascade text-center">
+                                    <!--Category & Title-->
+                                    <h5>Perodua Viva Elite 2011 Car</h5>
+                                    <!--Description-->
+                                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
+                                        aut
+                                        rerum
+                                        necessitatibus saepe
+                                        eveniet ut et voluptates.
+                                    </p>
+                                    <!--Card footer-->
+                                    <div class="card-footer">
+                                        <span class="float-left">49$ <span class="discount">199$</span></span>
+                                        <span class="float-right"><a class="" data-toggle="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a></span>
+                                    </div>
+                                </div>
+                                <!--/.Card content-->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-group mt-5">
+                    <div class="card shadow m-2">
+                        <a href="add1.html">
+                            <div class="card card-cascade card-ecommerce">
+                                <!--Card image-->
+                                <div class="view view-cascade overlay">
+                                    <img class="card-img-top" src="./img/img/buycarpage/img11.jpg" alt="">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+                                <!--Card content-->
+                                <div class="card-body card-body-cascade text-center">
+                                    <!--Category & Title-->
+                                    <h5>Toyota Axio G Grade 2015 Car</h5>
+                                    <!--Description-->
+                                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
+                                        aut
+                                        rerum
+                                        necessitatibus saepe
+                                        eveniet ut et voluptates.
+                                    </p>
+                                    <!--Card footer-->
+                                    <div class="card-footer">
+                                        <span class="float-left">49$ <span class="discount">199$</span></span>
+                                        <span class="float-right"><a class="" data-toggle="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a></span>
+                                    </div>
+                                </div>
+                                <!--/.Card content-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card shadow m-2">
+                        <a href="add1.html">
+                            <div class="card card-cascade card-ecommerce">
+                                <!--Card image-->
+                                <div class="view view-cascade overlay">
+                                    <img class="card-img-top" src="./img/img/buycarpage/img10.jpg" alt="">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+                                <!--Card content-->
+                                <div class="card-body card-body-cascade text-center">
+                                    <!--Category & Title-->
+                                    <h5>Honda N Wgn Cbe 2016 Car</h5>
+                                    <!--Description-->
+                                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
+                                        aut
+                                        rerum
+                                        necessitatibus saepe
+                                        eveniet ut et voluptates.
+                                    </p>
+                                    <!--Card footer-->
+                                    <div class="card-footer">
+                                        <span class="float-left">49$ <span class="discount">199$</span></span>
+                                        <span class="float-right"><a class="" data-toggle="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a></span>
+                                    </div>
+                                </div>
+                                <!--/.Card content-->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-group mt-5">
+                    <div class="card shadow m-2">
+                        <a href="add1.html">
+                            <div class="card card-cascade card-ecommerce">
+                                <!--Card image-->
+                                <div class="view view-cascade overlay">
+                                    <img class="card-img-top" src="./img/img/buycarpage/img4.jpg" alt="">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+                                <!--Card content-->
+                                <div class="card-body card-body-cascade text-center">
+                                    <!--Category & Title-->
+                                    <h5>Toyota Aqua 2012 Car</h5>
+                                    <!--Description-->
+                                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
+                                        aut
+                                        rerum
+                                        necessitatibus saepe
+                                        eveniet ut et voluptates.
+                                    </p>
+                                    <!--Card footer-->
+                                    <div class="card-footer">
+                                        <span class="float-left">49$ <span class="discount">199$</span></span>
+                                        <span class="float-right"><a class="" data-toggle="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a></span>
+                                    </div>
+                                </div>
+                                <!--/.Card content-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card shadow m-2">
+                        <a href="add1.html">
+                            <div class="card card-cascade card-ecommerce">
+                                <!--Card image-->
+                                <div class="view view-cascade overlay">
+                                    <img class="card-img-top" src="./img/img/buycarpage/img11.jpg" alt="">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+                                <!--Card content-->
+                                <div class="card-body card-body-cascade text-center">
+                                    <!--Category & Title-->
+                                    <h5>Suzuki Wagon R 2015 Car</h5>
+                                    <!--Description-->
+                                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
+                                        aut
+                                        rerum
+                                        necessitatibus saepe
+                                        eveniet ut et voluptates.
+                                    </p>
+                                    <!--Card footer-->
+                                    <div class="card-footer">
+                                        <span class="float-left">49$ <span class="discount">199$</span></span>
+                                        <span class="float-right"><a class="" data-toggle="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a></span>
+                                    </div>
+                                </div>
+                                <!--/.Card content-->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-group mt-5">
+                    <div class="card shadow m-2">
+                        <a href="add1.html">
+                            <div class="card card-cascade card-ecommerce">
+                                <!--Card image-->
+                                <div class="view view-cascade overlay">
+                                    <img class="card-img-top" src="./img/img/buycarpage/img15.jpg" alt="">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+                                <!--Card content-->
+                                <div class="card-body card-body-cascade text-center">
+                                    <!--Category & Title-->
+                                    <h5>Toyota Premio 2010 Car</h5>
+                                    <!--Description-->
+                                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
+                                        aut
+                                        rerum
+                                        necessitatibus saepe
+                                        eveniet ut et voluptates.
+                                    </p>
+                                    <!--Card footer-->
+                                    <div class="card-footer">
+                                        <span class="float-left">49$ <span class="discount">199$</span></span>
+                                        <span class="float-right"><a class="" data-toggle="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a></span>
+                                    </div>
+                                </div>
+                                <!--/.Card content-->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card shadow m-2">
+                        <a href="add1.html">
+                            <div class="card card-cascade card-ecommerce">
+                                <!--Card image-->
+                                <div class="view view-cascade overlay">
+                                    <img class="card-img-top" src="./img/img/buycarpage/img11.jpg" alt="">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <!--/.Card image-->
+                                <!--Card content-->
+                                <div class="card-body card-body-cascade text-center">
+                                    <!--Category & Title-->
+                                    <h5>Suzuki Wagon R 2015 Car</h5>
+                                    <!--Description-->
+                                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis
+                                        aut
+                                        rerum
+                                        necessitatibus saepe
+                                        eveniet ut et voluptates.
+                                    </p>
+                                    <!--Card footer-->
+                                    <div class="card-footer">
+                                        <span class="float-left">49$ <span class="discount">199$</span></span>
+                                        <span class="float-right"><a class="" data-toggle="tooltip" data-placement="top"
+                                                title="Add to Wishlist"><i class="fas fa-heart"></i></a></span>
+                                    </div>
+                                </div>
+                                <!--/.Card content-->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--End Card Section -->
+        </div>
+    </div>
+    </div>
+    </section>
     </div>
 
 
@@ -551,10 +580,10 @@
                         <a class="text-decoration-none" href="homepage.html">Home</a>
                     </p>
                     <p>
-                        <a class="text-decoration-none" href="addpost.html">Post a Ad Free </a>
+                        <a class="text-decoration-none" href="addpost.html">Post FREE Vehicle AD </a>
                     </p>
                     <p>
-                        <a class="text-decoration-none" href="#!">Contact us</a>
+                        <a class="text-decoration-none" href="contactus.html">Contact us</a>
                     </p>
                     <p>
                         <a class="text-decoration-none" href="#!">Contribute</a>
@@ -649,6 +678,25 @@
             interval: 2500,
             pus: 'hover'
         });
+    </script>
+
+    <script>
+        function popUp() {
+
+            var search;
+            var min;
+            var max;
+
+            var search = document.getElementById('search').value;
+            var min = document.getElementById('min').value;
+            var max = document.getElementById('max').value;
+
+            if (search == null || search == "" ||
+                min == null || min == "" ||
+                max == null || max == "") {
+                sweetAlert("Oops...", "Some details are missing, Please fill!", "error");
+            }
+        }
     </script>
 
 
