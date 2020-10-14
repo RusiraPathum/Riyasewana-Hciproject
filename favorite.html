@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyasewana | Favorites</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="./vender/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./vender/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="./vender/bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <!-- Font Awesome icons (free version)-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/favorite.css">
+    <link rel="stylesheet" href="./vender/bootstrap/css/aos.css">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" id="form-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="homepage.html"><span class="other">RIYASEWANA</span></a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="addpost.html">Post a Free Ad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contribute</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Books header -->
+    <div class="books-header">
+    </div>
+
+    <div class="container">
+        <section>
+            <div class="books-container">
+
+                <!-- sideMenu -->
+                <div class="box-1">
+                    <br>
+                    <h5>Welcome Nawod</h5>
+                    <br><br>
+                    <button class="btn btn-info float-right mt-1 mr-5 mb-2 ">My account</button>
+                    <button class="btn btn-info float-right mt-1 mr-5 mb-2 ">Post a Add</button>
+                    <button class="btn btn-info float-right mt-1 mr-5 mb-2 ">Favorites</button>
+                    <button class="btn btn-info float-right mt-1 mr-5 mb-2 ">Edit profile</button>
+                    <button class="btn btn-info float-right mt-1 mr-5 mb-2 ">Logout</button>
+
+
+
+                </div>
+
+
+                <div class="box-2">
+                    <div class="booksList">
+                        <div class="topic">
+                            <h5>My favorites</h5>
+                            <hr>
+                        </div>
+
+                        <!--Start Card Section -->
+
+                        <div class="a1000">
+                            <div class="img1">
+                                <img class="card-img-top" src="./img/img/buycarpage/img15.jpg" alt="">
+                            </div>
+                            <div class="bookInfo">
+                                <h3>Honda Vezel Z Grade(Hybrid)</h3>
+                                <span class="author">Model： DAA-RU3</span>
+                                <span class="author">Dimension： 4295×1770×1605mm</span>
+                                <span class="author">Body Type： SUV</span>
+                                <span class="author">Weight：1300kg</span>
+                                <span class="author">Riding Capacity：5</span>
+                            </div>
+                            <div class="remove">
+                                <button class="btn btn-danger mt-4 float-right mr-5 mb-5 " onclick="popUp()">remove</button>
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="a1000-1500">
+                            <div class="img1">
+                                <img class="card-img-top" src="./img/img/buycarpage/img16.jpg" alt="">
+                            </div>
+                            <div class="bookInfo">
+                                <h3>Toyota KDH(Luxury Van)</h3>
+                                <span class="author">Engine Displacement :2982 cc</span>
+                                <span class="author">Maximum Power :134.1 BHP @ 3400 rpm</span>
+                                <span class="author">Maximum Torque :300 NM @ 1200 rpm</span>
+                                <span class="author">Gearbox :4-speed Automatic/5-speed Manual Gearbox</span>
+                             
+                            </div>
+                            <div class="remove">
+                                <button class="btn btn-danger mt-4 float-right mr-5 mb-5 "
+                                    onclick="popUp()">remove</button>
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="a1000-1500">
+                            <div class="img1">
+                                <img class="card-img-top" src="./img/img/buycarpage/img7.jpg" alt="">
+                            </div>
+                            <div class="bookInfo">
+                                <h3>Toyota KDH(Luxury Van)</h3>
+                                <span class="author">Engine Displacement :2982 cc</span>
+                                <span class="author">Maximum Power :134.1 BHP @ 3400 rpm</span>
+                                <span class="author">Maximum Torque :300 NM @ 1200 rpm</span>
+                                <span class="author">Gearbox :4-speed Automatic/5-speed Manual Gearbox</span>
+                                
+                            </div>
+                            <div class="remove">
+                                <button class="btn btn-danger mt-4 float-right mr-5 mb-5 "
+                                    onclick="popUp()">remove</button>
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="a1000-1500">
+                            <div class="img1">
+                                <img class="card-img-top" src="./img/img/buyvanpage/img3.jpg" alt="">
+                            </div>
+                            <div class="bookInfo">
+                                <h3>Toyota KDH(Luxury Van)</h3>
+                                <span class="author">Engine Displacement :2982 cc</span>
+                                <span class="author">Maximum Power :134.1 BHP @ 3400 rpm</span>
+                                <span class="author">Maximum Torque :300 NM @ 1200 rpm</span>
+                                <span class="author">Gearbox :4-speed Automatic/5-speed Manual Gearbox</span>
+                                
+                            </div>
+                            <div class="remove">
+                                <button class="btn btn-danger mt-4 float-right mr-5 mb-5 "
+                                    onclick="popUp()">remove</button>
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <!--End Card Section -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="container-fluid page-footer font-small pt-4 bg-dark text-light">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Riyasewana Srilanka</h6>
+                    <p>
+                        Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit.
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold ">Useful links</h6>
+                    <p>
+                        <a class="text-decoration-none" href="#!">Home</a>
+                    </p>
+                    <p>
+                        <a class="text-decoration-none" href="#!">Post a Ad Free </a>
+                    </p>
+                    <p>
+                        <a class="text-decoration-none" href="#!">Contact us</a>
+                    </p>
+                    <p>
+                        <a class="text-decoration-none" href="#!">Contribute</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <div id="contact" class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 id="contacus" class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p>
+                        <i class="fas fa-home mr-3"></i> No :- 15/1, Awissawella
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> infogmail@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> + 01 234 567 88
+                    </p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i> + 01 234 567 89
+                    </p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Footer links -->
+            <hr>
+            <!-- Grid row -->
+            <div class="row d-flex align-items-center">
+                <!-- Grid column -->
+                <div class="col-md-4">
+                    <div>
+                        <div class="">
+                            <p>Copyright ..&copy 2020; <span id="year"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-4 ml-lg-0">
+                    <!-- Social buttons -->
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+    </footer>
+
+    <!--Start back to up button-->
+    <a href="#" class="scrollUpButton">&#9650</a>
+    <!--End back to up button-->
+
+    <script src="http://cdnjs.cloudflare.com/ajaxlibs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajaxlibs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./vender/jquery/jquery.min.js "></script>
+    <script src="./vender/bootstrap/js/bootstrap.js "></script>
+    <script src="./vender/bootstrap/js/bootstrap.bundle.min.js "></script>
+
+    <!--Bak to up-->
+    <script src="./vender/jquery/backtoup.js"></script>
+
+    <script>
+        function popUp() {
+            swal("Successfull!", "item deleted form favorite!", "success");
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
