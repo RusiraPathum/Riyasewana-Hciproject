@@ -17,6 +17,7 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./vender/bootstrap/css/aos.css">
+    <link rel="stylesheet" href="./css/chatbox.css">
 
 </head>
 
@@ -38,7 +39,7 @@
                         <a class="nav-link" href="contactus.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contribute</a>
+                        <a class="nav-link" href="contribute.html">Contribute</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Login</a>
@@ -257,7 +258,7 @@
                     <a href="addpost.html"><i class="fas fa-plus-square mr-2"></i>Add a Post</a>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 co-12 div-2">
+            <div class="col-lg-6 col-md-6 col-sm-12 co-12 div-2" data-aos="fade-left">
                 <img src="./img/img/addpost/call_girl.png" alt="">
             </div>
         </div>
@@ -265,7 +266,7 @@
     <!--End Add Section -->
 
     <!--Start RECENT VEHICLES -->
-    <div class="container">
+    <!-- <div class="container">
         <h1 class="text-center mt-5" id="RECENTVEHICLES">RECENT VEHICLES</h1>
         <hr>
     </div>
@@ -281,10 +282,35 @@
             <span style="--i:7"><img src="./img/img/buycarpage/img2.jpg" alt=""></span>
             <span style="--i:8"><img src="./img/img/buycarpage/img11.jpg" alt=""></span>
         </div>
-    </section>
+    </section> -->
     <!--End RECENT VEHICLES -->
 
+    
+<br><br><br>
 
+<div data-aos="fade-right">
+    <button class="openChatBtn" onclick="openForm()"><span><i class="far fa-comment-dots"></i></span></button>
+    <div class="openChat">
+        <form>
+            <h1>Live Chart</h1>
+            <hr>
+            <!-- <label for="msg"><b>Message</b></label> -->
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+            <div class="row">
+                <div class="col-6">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-danger" onclick="closeForm()">
+                        Close
+                    </button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>
     <!--Start Footer Section -->
     <footer class="container-fluid page-footer font-small pt-4 bg-dark text-light">
         <!-- Footer Links -->
@@ -317,7 +343,7 @@
                         <a class="text-decoration-none" href="contactus.html">Contact us</a>
                     </p>
                     <p>
-                        <a class="text-decoration-none" href="#!">Contribute</a>
+                        <a class="text-decoration-none" href="contribute.html">Contribute</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -387,6 +413,9 @@
         </div>
         <!-- Footer Links -->
     </footer>
+
+    
+
     <!--End Footer Section -->
 
     <!--Start back to up button-->
@@ -404,6 +433,19 @@
 
     <!--Bak to up-->
     <script src="./vender/jquery/backtoup.js"></script>
+
+    <script>
+        document.querySelector(".openChatBtn").addEventListener("click", openForm);
+        document.querySelector(".close").addEventListener("click", closeForm);
+
+        function openForm() {
+            document.querySelector(".openChat").style.display = "block";
+        }
+
+        function closeForm() {
+            document.querySelector(".openChat").style.display = "none";
+        }
+    </script>
 
     <!--aos animate-->
     <script>

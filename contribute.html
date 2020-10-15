@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </link>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/contribute_style.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Contribute Form</title>
 </head>
-<body>  
+
+<body>
 
     <!--Start Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -51,18 +53,19 @@
                     <div class="card-body">
                         <div class="card-title lead text-center my-4">Please Countribute To Us</div>
                         <form>
-                            <p style="color: rgb(2, 71, 68);">----------------------------------Give To Reyasewana----------------------------------</p>
-                           <div class="Button">
+                            <p style="color: rgb(2, 71, 68);">----------------------------------Give To
+                                Reyasewana----------------------------------</p>
+                            <div class="Button">
                                 <div class="form-group">
                                     <button onclick="doler1()" class="btn btn-lg btn-block cBtn">
                                         $25
                                     </button>
-                                    
+
                                     <button onclick="doler2()" class="btn btn-lg btn-block cBtn">
                                         $50
                                     </button>
 
-                                    <button  onclick="doler3()" class="btn btn-lg btn-block cBtn">
+                                    <button onclick="doler3()" class="btn btn-lg btn-block cBtn">
                                         $75
                                     </button>
 
@@ -70,13 +73,14 @@
                                         $100
                                     </button>
                                 </div>
-                           </div>
-                           <hr class="my-3">
-                           <div class="word_1">Select other contribute value.</div>
-                           <div class="select$">
+                            </div>
+                            <hr class="my-3">
+                            <div class="word_1">Select other contribute value.</div>
+                            <div class="select$">
 
                                 <form>
-                                    <select style="background-color: rgb(213, 248, 248);" id="select$" type="select"  class="form-control" data-placeholder="Choose Dolor($) for us...">
+                                    <select style="background-color: rgb(213, 248, 248);" id="select$" type="select"
+                                        class="form-control" data-placeholder="Choose Dolor($) for us...">
                                         <option value="$1">$5</option>
                                         <option value="$2">$10</option>
                                         <option value="@3">$15</option>
@@ -97,32 +101,34 @@
                                         <option value="@3">$90</option>
                                         <option value="@3">$95</option>
                                         <option value="@3">$100</option>
-                                      </select>
-                                      <span id="e5" class="text-danger font-weight-bold"> </span>
+                                    </select>
+                                    <span id="e5" class="text-danger font-weight-bold"> </span>
                                 </form>
-                           </div>
-                           <hr class="my-3">
-                           <p style="color: rgb(2, 71, 68);">----------------------Would You Like To Setup A Recurring Gift?----------------------</p>
-                           <hr class="my-2">
+                            </div>
+                            <hr class="my-3">
+                            <p style="color: rgb(2, 71, 68);">----------------------Would You Like To Setup A Recurring
+                                Gift?----------------------</p>
+                            <hr class="my-2">
 
-                           <div class="setup">
-                               <div class="form-group">
-                                    <button  class="btnS btn-lg btn-block sBtn">
+                            <div class="setup">
+                                <div class="form-group">
+                                    <button class="btnS btn-lg btn-block sBtn">
                                         One Time
                                     </button>
-                                    <button  class="btnS btn-lg btn-block sBtn">
+                                    <button class="btnS btn-lg btn-block sBtn">
                                         Monthly
                                     </button>
-                                    <button  class="btnS btn-lg btn-block sBtn">
+                                    <button class="btnS btn-lg btn-block sBtn">
                                         Quarterly
                                     </button>
-                                    <button  class="btnS btn-lg btn-block sBtn">
+                                    <button class="btnS btn-lg btn-block sBtn">
                                         Annualy
                                     </button>
-                               </div>
-                           </div>
-                           <hr class="my-3">
-                           <p style="color: rgb(5, 68, 19);">---------------------------------Contact Information---------------------------------</p>
+                                </div>
+                            </div>
+                            <hr class="my-3">
+                            <p style="color: rgb(5, 68, 19);">---------------------------------Contact
+                                Information---------------------------------</p>
 
                             <hr class="my-2">
                             <p style="color: rgb(22, 4, 75);">Please fill in this form to countribute for us.</p>
@@ -132,7 +138,7 @@
                                     <div class="word_1">Full Name</div>
                                     <div class="form-group">
                                         <input id="fName" type="text" multiple class="form-control"
-                                        placeholder="Enter Your Full Name" required autofocus>
+                                            placeholder="Enter Your Full Name" required autofocus>
                                         <span id="e1" class="text-danger font-weight-bold"> </span>
                                     </div>
                                 </div>
@@ -140,47 +146,49 @@
                                     <div class="word_1">Mobile Number</div>
                                     <div class="form-group">
                                         <input id="Num" type="number" class="form-control"
-                                        placeholder="Enter Your Mobile Number" required autofocus>
+                                            placeholder="Enter Your Mobile Number" required autofocus>
                                         <span id="e3" class="text-danger font-weight-bold"> </span>
                                     </div>
-                                </div>                             
+                                </div>
                             </div>
 
                             <div class=" row">
                                 <div class="col-md-6 float-md-right">
                                     <div class="word_1">Password</div>
                                     <div class="form-group">
-                                        <input id="pass" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" multiple class="form-control"
-                                        placeholder="Enter Your Password" required autofocus>
+                                        <input id="pass" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                            multiple class="form-control" placeholder="Enter Your Password" required
+                                            autofocus>
                                         <span id="e2" class="text-danger font-weight-bold"> </span>
                                     </div>
                                 </div>
                                 <div class="col-md-6 float-md-right">
                                     <div class="word_1">Email</div>
                                     <div class="form-group">
-                                        <input id="email" type="email"
-                                        required class="form-control"
-                                        placeholder="Enter Your Email Address" required autofocus >
+                                        <input id="email" type="email" required class="form-control"
+                                            placeholder="Enter Your Email Address" required autofocus>
                                         <span id="e4" class="text-danger font-weight-bold"> </span>
                                     </div>
                                 </div>
                             </div>
-                        
+
                             <div class="submitBtn my-4">
-                                <button onclick="validation()" type="button"class="btn2 btn-secondary btn-lg btn-block">
+                                <button onclick="validation()" type="button"
+                                    class="btn2 btn-secondary btn-lg btn-block">
                                     Contribute
                                 </button>
                             </div>
-                            </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
+                </form>
             </div>
         </div>
     </div>
+    </div>
+    </div>
 
-<br><br><br><br><br><br>
+    <br><br><br><br><br><br>
     <!--Start Footer Section -->
     <footer class="container-fluid page-footer font-small pt-4 bg-dark text-light">
         <!-- Footer Links -->
@@ -284,117 +292,113 @@
         <!-- Footer Links -->
     </footer>
     <!--End Footer Section -->
-    
+
 
     <script>
-		
-
-		function validation(){
+        function validation() {
 
             var select = document.getElementById('select$').value;
-			var fname = document.getElementById('fName').value;
+            var fname = document.getElementById('fName').value;
             var mobileNumber = document.getElementById('Num').value;
-			var pass = document.getElementById('pass').value;
-			var emails = document.getElementById('email').value;
+            var pass = document.getElementById('pass').value;
+            var emails = document.getElementById('email').value;
 
 
-            if(select == ""){
-				document.getElementById('e5').innerHTML =" ** Please select your donation price";
-				return false;
-			}
-
-
-
-			if(fname == ""){
-				document.getElementById('e1').innerHTML =" ** Please fill the Full name field";
-				return false;
-			}
-			if((fname.length <= 2) || (fname.length > 20)) {
-				document.getElementById('e1').innerHTML =" ** Full name lenght must be between 2 and 20";
-				return false;	
-			}
-			if(!isNaN(fname)){
-				document.getElementById('e1').innerHTML =" ** only characters are allowed";
-				return false;
-			}
+            if (select == "") {
+                document.getElementById('e5').innerHTML = " ** Please select your donation price";
+                return false;
+            }
 
 
 
-
-            if(mobileNumber == ""){
-				document.getElementById('e3').innerHTML =" ** Please fill the mobile NUmber field";
-				return false;
-			}
-			if(isNaN(mobileNumber)){
-				document.getElementById('e3').innerHTML =" ** user must write digits only not characters";
-				return false;
-			}
-			if(mobileNumber.length!=10){
-				document.getElementById('e3').innerHTML =" ** Mobile Number must be 10 digits only";
-				return false;
-			}
+            if (fname == "") {
+                document.getElementById('e1').innerHTML = " ** Please fill the Full name field";
+                return false;
+            }
+            if ((fname.length <= 2) || (fname.length > 20)) {
+                document.getElementById('e1').innerHTML = " ** Full name lenght must be between 2 and 20";
+                return false;
+            }
+            if (!isNaN(fname)) {
+                document.getElementById('e1').innerHTML = " ** only characters are allowed";
+                return false;
+            }
 
 
 
 
+            if (mobileNumber == "") {
+                document.getElementById('e3').innerHTML = " ** Please fill the mobile NUmber field";
+                return false;
+            }
+            if (isNaN(mobileNumber)) {
+                document.getElementById('e3').innerHTML = " ** user must write digits only not characters";
+                return false;
+            }
+            if (mobileNumber.length != 10) {
+                document.getElementById('e3').innerHTML = " ** Mobile Number must be 10 digits only";
+                return false;
+            }
 
 
 
-			if(pass == ""){
-				document.getElementById('e2').innerHTML =" ** Please fill the password field";
-				return false;
-			}
-			if((pass.length <= 5) || (pass.length > 20)) {
-				document.getElementById('e2').innerHTML =" ** Passwords lenght must be between  5 and 20";
-				return false;	
-			}
 
 
 
 
-		
+            if (pass == "") {
+                document.getElementById('e2').innerHTML = " ** Please fill the password field";
+                return false;
+            }
+            if ((pass.length <= 5) || (pass.length > 20)) {
+                document.getElementById('e2').innerHTML = " ** Passwords lenght must be between  5 and 20";
+                return false;
+            }
 
 
-			if(emails == ""){
-				document.getElementById('e4').innerHTML =" ** Please fill the email  field";
-				return false;
-			}
-			if(emails.indexOf('@') <= 0 ){
-				document.getElementById('e4').innerHTML =" ** @ Invalid Position";
-				return false;
-			}
 
-			if((emails.charAt(emails.length-4)!='.') && (emails.charAt(emails.length-3)!='.')){
-				document.getElementById('e4').innerHTML =" ** . Invalid Position";
-				return false;
-			}
-            else{
+
+
+
+
+            if (emails == "") {
+                document.getElementById('e4').innerHTML = " ** Please fill the email  field";
+                return false;
+            }
+            if (emails.indexOf('@') <= 0) {
+                document.getElementById('e4').innerHTML = " ** @ Invalid Position";
+                return false;
+            }
+
+            if ((emails.charAt(emails.length - 4) != '.') && (emails.charAt(emails.length - 3) != '.')) {
+                document.getElementById('e4').innerHTML = " ** . Invalid Position";
+                return false;
+            } else {
                 confirm(" Thanks,Donation Successfully...! Come Againe.");
             }
-		}
-
-	</script>
+        }
+    </script>
 
     <script>
-        function doler1(){
+        function doler1() {
 
             confirm("Thanks, You Selected 25$ For Donetion To Us.")
         }
     </script>
     <script>
-        function doler2(){
+        function doler2() {
 
             confirm("Thanks, You Selected 50$ For Donetion To Us.")
         }
     </script>
     <script>
-        function doler3(){
+        function doler3() {
 
             confirm("Thanks, You Selected 75$ For Donetion To Us.")
         }
     </script>
     <script>
-        function doler4(){
+        function doler4() {
 
             confirm("Thanks, You Selected 100$ For Donetion To Us.")
         }
@@ -403,20 +407,21 @@
 
 
 
-    
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-    crossorigin="anonymous"></script>
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
-integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
-crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
-integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
-crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
 
 
 </body>
+
 </html>
