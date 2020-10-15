@@ -22,7 +22,7 @@
 
     <!-- Fontawsome -->
     <script src="https://kit.fontawesome.com/9aa55b9b3f.js"></script>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!-- Owl carousel css -->
     <link rel="stylesheet" href="./css/css/owl-carousel/owl.carousel.min.css">
@@ -36,11 +36,12 @@
 
 <body>
 
- <!--Start Navbar -->
+    <!--Start Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark " id="form-navbar">
         <div class="container">
             <a class="navbar-brand" href="homepage.html"><span class="other">RIYASEWANA</span></a>
-            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -49,10 +50,7 @@
                         <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="addpost.html">Post a Free Ad</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contribute</a>
@@ -60,12 +58,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Login</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="freeadd" href="addpost.html">Post FREE Vehicle AD</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-	<br>
-	<br>
-	<br>
+    <br>
+    <br>
+    <br>
 
     <!--Preloader-->
     <div id="preloader">
@@ -75,7 +77,7 @@
     </div>
     <!-- End preloader -->
 
-   
+
 
     <!-- Container - 1 -->
     <section>
@@ -83,7 +85,7 @@
             <!-- categories box -->
             <div class="box-1">
                 <div class="container">
-                   
+
                 </div>
             </div>
             <!-- Slide show box -->
@@ -142,91 +144,92 @@
                 <img src="./img/image/co.png" alt="coupon" class="coupon">
             </div>
         </div>
-		<br>
+        <br>
     </section>
-	<br><br>
-	</br>
+    <br><br>
+    </br>
     <!-- End Container - 1 -->
-<br>
+    <br>
     <!-- Container -2 -->
-	<form onsubmit="myFunction()">
-    
-            <!--1-->
-            <div class="form-row">
-                <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault02">User Name<span class="text-danger"></span></label>
-                    <input type="text" class="form-control ml-2" id="username" placeholder="username" >
-                </div>
-				
-               <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault02">E-mail<span class="text-danger"></span></label>
-                    <input type="email" class="form-control ml-2" id="email" placeholder="email">
-                </div>
-            </div>
-            <!--2-->
-            <div class="form-row">
-               <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault02">Name<span class="text-danger"></span></label>
-                    <input type="text" class="form-control ml-2" id="name" placeholder="name">
-                </div>
-				
-                <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault02">NIC<span class="text-danger"></span></label>
-                    <input type="text" class="form-control ml-2" id="nic" placeholder="nic" maxlength="10">
-                </div>
-            </div>
-            <!--3-->
-            <div class="form-row">
-                 <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault02">Password<span class="text-danger"></span></label>
-                    <input type="password" class="form-control ml-2" id="password" placeholder="password">
-                </div>
-				
-                 <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault02">Phone Number<span class="text-danger"></span></label>
-                    <input type="number" class="form-control ml-2" id="phonenumber" maxlength="10" placeholder="pone number" >
-                </div>
-				
-            </div>
-            <!--4-->
-            <div class="form-row">
-                 <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault02">Re-Enter Password<span class="text-danger"></span></label>
-                    <input type="password" class="form-control ml-2" id="reenterpassword" placeholder="re enter password">
-                </div>
-				
-                <div class="col-md-6 mb-5 pr-5 pl-5">
-                    <label for="validationDefault04">City <span class="text-danger"></span></label>
-                    <select class="custom-select ml-2" id="city">
-                        <option selected disabled value="">select city</option>
-                        <option>Gampaha</option>
-                        <option>Ganemulla</option>
-                        <option>Kadawatha</option>
-                        <option>Kaduwela</option>
-                        <option>Colombo</option>
-                    </select>
-                </div>
-            </div>
-            <!--5-->
-            
-            <!--6-->
-       
-            
-			<div class="sumbutton mb-5">
-                <input type="submit"  class="btn  align-right float-right mr-5" type="submit" value="Submit">
+    <form onsubmit="myFunction()">
+
+        <!--1-->
+        <div class="form-row">
+            <div class="col-md-6 mb-5 pr-5 pl-5">
+                <label for="validationDefault02">User Name<span class="text-danger"></span></label>
+                <input type="text" class="form-control ml-2" id="username" placeholder="username">
             </div>
 
+            <div class="col-md-6 mb-5 pr-5 pl-5">
+                <label for="validationDefault02">E-mail<span class="text-danger"></span></label>
+                <input type="email" class="form-control ml-2" id="email" placeholder="email">
+            </div>
+        </div>
+        <!--2-->
+        <div class="form-row">
+            <div class="col-md-6 mb-5 pr-5 pl-5">
+                <label for="validationDefault02">Name<span class="text-danger"></span></label>
+                <input type="text" class="form-control ml-2" id="name" placeholder="name">
+            </div>
 
-        </form>
+            <div class="col-md-6 mb-5 pr-5 pl-5">
+                <label for="validationDefault02">NIC<span class="text-danger"></span></label>
+                <input type="text" class="form-control ml-2" id="nic" placeholder="nic" maxlength="10">
+            </div>
+        </div>
+        <!--3-->
+        <div class="form-row">
+            <div class="col-md-6 mb-5 pr-5 pl-5">
+                <label for="validationDefault02">Password<span class="text-danger"></span></label>
+                <input type="password" class="form-control ml-2" id="password" placeholder="password">
+            </div>
+
+            <div class="col-md-6 mb-5 pr-5 pl-5">
+                <label for="validationDefault02">Phone Number<span class="text-danger"></span></label>
+                <input type="number" class="form-control ml-2" id="phonenumber" maxlength="10"
+                    placeholder="pone number">
+            </div>
+
+        </div>
+        <!--4-->
+        <div class="form-row">
+            <div class="col-md-6 mb-5 pr-5 pl-5">
+                <label for="validationDefault02">Re-Enter Password<span class="text-danger"></span></label>
+                <input type="password" class="form-control ml-2" id="reenterpassword" placeholder="re enter password">
+            </div>
+
+            <div class="col-md-6 mb-5 pr-5 pl-5">
+                <label for="validationDefault04">City <span class="text-danger"></span></label>
+                <select class="custom-select ml-2" id="city">
+                    <option selected disabled value="">select city</option>
+                    <option>Gampaha</option>
+                    <option>Ganemulla</option>
+                    <option>Kadawatha</option>
+                    <option>Kaduwela</option>
+                    <option>Colombo</option>
+                </select>
+            </div>
+        </div>
+        <!--5-->
+
+        <!--6-->
+
+
+        <div class="sumbutton mb-5">
+            <input type="submit" class="btn  align-right float-right mr-5" type="submit" value="Submit">
+        </div>
+
+
+    </form>
     <!-- End container - 2 -->
 
-  <br><br>
+    <br><br>
 
-   
+
 
     <!-- Footer -->
-    
-         <!--Start Footer Section -->
+
+    <!--Start Footer Section -->
     <footer class="container-fluid page-footer font-small pt-4 bg-dark text-light mt-5">
         <!-- Footer Links -->
         <div class="container text-center text-md-left">
@@ -236,7 +239,8 @@
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Riyasewana Srilanka</h6>
                     <p>
-                        Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit.
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -248,13 +252,13 @@
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold ">Useful links</h6>
                     <p>
-                        <a class="text-decoration-none" href="#!">Home</a>
+                        <a class="text-decoration-none" href="homepage.html">Home</a>
                     </p>
                     <p>
-                        <a class="text-decoration-none" href="#!">Post a Ad Free </a>
+                        <a class="text-decoration-none" href="addpost.html">Post FREE Vehicle AD </a>
                     </p>
                     <p>
-                        <a class="text-decoration-none" href="#!">Contact us</a>
+                        <a class="text-decoration-none" href="contactus.html">Contact us</a>
                     </p>
                     <p>
                         <a class="text-decoration-none" href="#!">Contribute</a>
@@ -329,17 +333,17 @@
     </footer>
     <!--End Footer Section -->
 
-    
+
     <!--Start back to up button-->
     <a href="#" class="scrollUpButton">&#9650</a>
     <!--End back to up button-->
 
     <!--Bak to up-->
     <script src="./vender/jquery/backtoup.js"></script>
-    
+
     <!-- End footer -->
 
-<!-- Popup js -->
+    <!-- Popup js -->
 
 
     <script>
@@ -353,7 +357,7 @@
             var phonenumber;
             var reenterpassword;
             var city;
-           
+
 
             var username = document.getElementById('username').value;
             var email = document.getElementById('email').value;
@@ -363,20 +367,22 @@
             var phonenumber = document.getElementById('phonenumber').value;
             var reenterpassword = document.getElementById('reenterpassword').value;
             var city = document.getElementById('city').value;
-            
 
 
-            if (username == null || username == "" || email == null || email == "" || name == null || name == "" || nic == null || nic == "" || password == null || password == "" || phonenumber == null || phonenumber == "" || reenterpassword == null || reenterpassword == "" || city == null || city == "" ) {
-                alert( "Some details are missing, Please fill!");
+
+            if (username == null || username == "" || email == null || email == "" || name == null || name == "" ||
+                nic == null || nic == "" || password == null || password == "" || phonenumber == null || phonenumber ==
+                "" || reenterpassword == null || reenterpassword == "" || city == null || city == "") {
+                alert("Some details are missing, Please fill!");
             } else {
                 alert("Your Registered to Our System!");
             }
         }
     </script>
-	
-	
 
-    
+
+
+
     <!-- End Login and Register -->
 
     <!-- JQuery Google CDN-->
@@ -396,7 +402,7 @@
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
-	
+
 </body>
 
 </html>

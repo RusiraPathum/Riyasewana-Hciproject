@@ -532,6 +532,11 @@ hr {
 .location-sec .navbar-nav .nav-item .nav-link {
     color: rgb(0, 0, 0) !important;
 }
+#freeadd{
+    background: linear-gradient(#f3ff8f,#e2dd54);
+    border-radius: 10px;
+    color: #000000!important;
+}
 
 .scrollUpButton:hover,
 .scrollUpButton:focus {
@@ -559,15 +564,6 @@ hr {
     margin-right: -50px!important;
 }
 
-@keyframes form-btn {
-    0% {
-        box-shadow: 0 0 0 0px rgba(0, 162, 255, 0.452);
-    }
-
-    100% {
-        box-shadow: 0 0 0 20px rgba(0, 162, 255, 0.144);
-    }
-}
 
 .fom-sec .input_form .sumbutton .btn:hover {
     color: #000000;

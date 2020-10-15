@@ -1,0 +1,123 @@
+body {
+    background-image: url('../image/img4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0 0.9rem 1.5rem 0 rgba(0,0,0,1);
+    position: relative;
+    top: 100px;
+    padding: 0 5px;
+}
+
+.lead {
+    fron-size: 30px;
+}
+
+
+.form-group{
+    margin-bottom: 15px; 
+    padding-bottom:20px; 
+    position: relative;
+    
+}
+.form-group input{
+
+    font-size: 14.5px;
+    font-family: sans-serif;
+    color: #444;
+    font-weight: 700;
+    background-color: #fff;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="select"]{
+
+    border-radius: 50px;
+    padding: 20px;
+}
+.btn{
+    display: inline-block; 
+    margin-right: 20px;
+}
+
+.btnS{
+    display: inline-block; 
+    margin-right: 5px;
+}
+
+.btn2 {
+    border-radius: 50px;
+    padding: 8px 0;
+    background-color: rgb(6, 187, 6);
+    width: 50%;
+    float: right;;
+}
+
+.btn2:hover {
+    background-color: rgb(24, 236, 24);
+  }
+
+
+.cBtn {
+    background-color: #287ba1;
+    border-radius: 20px;
+    padding: 8px 0;
+    color: #ccc;
+    width: 120px;
+    height: 130px; 
+}
+.sBtn{
+    background-color: #3b5998;
+    border-radius: 50px;
+    padding: 8px 0;
+    color: #ccc;
+    width: 135px;
+    height: 50px; 
+}
+
+.cBtn:hover{
+    background-color: blue  ;
+}
+.sBtn:hover{
+    background-color: blue  ;
+}
+.word_1 {
+    color: #c20b0b;
+    margin-bottom: 4px;
+}
+.card-title {
+
+    color: #fc0505;
+}
+.Button{
+    display: inline-block; 
+    width: 100%;
+}
+.setup{
+    display: inline-block; 
+    width: 100%;
+}
+.countactUs1{
+    display: inline-block; 
+    width: 100%;
+    float: left;
+}
+.countactUs2{
+    display: inline-block; 
+    width: 100%;
+    float: right;
+}
+.submitBtn{
+    display: inline-block; 
+    width: 65%;
+    float: left;
+}

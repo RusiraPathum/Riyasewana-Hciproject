@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/contribute_style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contribute Form</title>
+</head>
+<body>  
+
+    <!--Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="homepage.html">RIYASEWANA</a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contribute.html">Contribute</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="freeadd" href="addpost.html">Post FREE Vehicle AD</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End Navbar -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-7 mx-auto">
+                <div class="card" style="background-color: rgba(245, 245, 245, 0.4);">
+                    <div class="card-body">
+                        <div class="card-title lead text-center my-4">Please Countribute To Us</div>
+                        <form>
+                            <p style="color: rgb(2, 71, 68);">----------------------------------Give To Reyasewana----------------------------------</p>
+                           <div class="Button">
+                                <div class="form-group">
+                                    <button onclick="doler1()" class="btn btn-lg btn-block cBtn">
+                                        $25
+                                    </button>
+                                    
+                                    <button onclick="doler2()" class="btn btn-lg btn-block cBtn">
+                                        $50
+                                    </button>
+
+                                    <button  onclick="doler3()" class="btn btn-lg btn-block cBtn">
+                                        $75
+                                    </button>
+
+                                    <button onclick="doler4()" class="btn btn-lg btn-block cBtn">
+                                        $100
+                                    </button>
+                                </div>
+                           </div>
+                           <hr class="my-3">
+                           <div class="word_1">Select other contribute value.</div>
+                           <div class="select$">
+
+                                <form>
+                                    <select style="background-color: rgb(213, 248, 248);" id="select$" type="select"  class="form-control" data-placeholder="Choose Dolor($) for us...">
+                                        <option value="$1">$5</option>
+                                        <option value="$2">$10</option>
+                                        <option value="@3">$15</option>
+                                        <option value="@3">$20</option>
+                                        <option value="@3">$25</option>
+                                        <option value="@3">$30</option>
+                                        <option value="@3">$35</option>
+                                        <option value="@3">$40</option>
+                                        <option value="@3">$45</option>
+                                        <option value="@3">$50</option>
+                                        <option value="@3">$55</option>
+                                        <option value="@3">$60</option>
+                                        <option value="@3">$65</option>
+                                        <option value="@3">$70</option>
+                                        <option value="@3">$75</option>
+                                        <option value="@3">$80</option>
+                                        <option value="@3">$85</option>
+                                        <option value="@3">$90</option>
+                                        <option value="@3">$95</option>
+                                        <option value="@3">$100</option>
+                                      </select>
+                                      <span id="e5" class="text-danger font-weight-bold"> </span>
+                                </form>
+                           </div>
+                           <hr class="my-3">
+                           <p style="color: rgb(2, 71, 68);">----------------------Would You Like To Setup A Recurring Gift?----------------------</p>
+                           <hr class="my-2">
+
+                           <div class="setup">
+                               <div class="form-group">
+                                    <button  class="btnS btn-lg btn-block sBtn">
+                                        One Time
+                                    </button>
+                                    <button  class="btnS btn-lg btn-block sBtn">
+                                        Monthly
+                                    </button>
+                                    <button  class="btnS btn-lg btn-block sBtn">
+                                        Quarterly
+                                    </button>
+                                    <button  class="btnS btn-lg btn-block sBtn">
+                                        Annualy
+                                    </button>
+                               </div>
+                           </div>
+                           <hr class="my-3">
+                           <p style="color: rgb(5, 68, 19);">---------------------------------Contact Information---------------------------------</p>
+
+                            <hr class="my-2">
+                            <p style="color: rgb(22, 4, 75);">Please fill in this form to countribute for us.</p>
+
+                            <div class=" row">
+                                <div class="col-md-6 float-md-left">
+                                    <div class="word_1">Full Name</div>
+                                    <div class="form-group">
+                                        <input id="fName" type="text" multiple class="form-control"
+                                        placeholder="Enter Your Full Name" required autofocus>
+                                        <span id="e1" class="text-danger font-weight-bold"> </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 float-md-left">
+                                    <div class="word_1">Mobile Number</div>
+                                    <div class="form-group">
+                                        <input id="Num" type="number" class="form-control"
+                                        placeholder="Enter Your Mobile Number" required autofocus>
+                                        <span id="e3" class="text-danger font-weight-bold"> </span>
+                                    </div>
+                                </div>                             
+                            </div>
+
+                            <div class=" row">
+                                <div class="col-md-6 float-md-right">
+                                    <div class="word_1">Password</div>
+                                    <div class="form-group">
+                                        <input id="pass" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" multiple class="form-control"
+                                        placeholder="Enter Your Password" required autofocus>
+                                        <span id="e2" class="text-danger font-weight-bold"> </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 float-md-right">
+                                    <div class="word_1">Email</div>
+                                    <div class="form-group">
+                                        <input id="email" type="email"
+                                        required class="form-control"
+                                        placeholder="Enter Your Email Address" required autofocus >
+                                        <span id="e4" class="text-danger font-weight-bold"> </span>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="submitBtn my-4">
+                                <button onclick="validation()" type="button"class="btn2 btn-secondary btn-lg btn-block">
+                                    Contribute
+                                </button>
+                            </div>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<br><br><br><br><br><br>
+    <!--Start Footer Section -->
+    <footer class="container-fluid page-footer font-small pt-4 bg-dark text-light">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Riyasewana Srilanka</h6>
+                    <p>
+                        Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit.
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold ">Useful links</h6>
+                    <p>
+                        <a class="text-decoration-none" href="homepage.html">Home</a>
+                    </p>
+                    <p>
+                        <a class="text-decoration-none" href="addpost.html">Post FREE Vehicle AD </a>
+                    </p>
+                    <p>
+                        <a class="text-decoration-none" href="contactus.html">Contact us</a>
+                    </p>
+                    <p>
+                        <a class="text-decoration-none" href="contribute.html">Contribute</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <div id="contact" class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 id="contacus" class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p>
+                        <i class="fas fa-home mr-3"></i> No :- 15/1, Awissawella
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> infogmail@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> + 01 234 567 88
+                    </p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i> + 01 234 567 89
+                    </p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Footer links -->
+            <hr>
+            <!-- Grid row -->
+            <div class="row d-flex align-items-center">
+                <!-- Grid column -->
+                <div class="col-md-4">
+                    <div>
+                        <div class="">
+                            <p>Copyright ..&copy; <span id="year"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-4 ml-lg-0">
+                    <!-- Social buttons -->
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+    </footer>
+    <!--End Footer Section -->
+    
+
+    <script>
+		
+
+		function validation(){
+
+            var select = document.getElementById('select$').value;
+			var fname = document.getElementById('fName').value;
+            var mobileNumber = document.getElementById('Num').value;
+			var pass = document.getElementById('pass').value;
+			var emails = document.getElementById('email').value;
+
+
+            if(select == ""){
+				document.getElementById('e5').innerHTML =" ** Please select your donation price";
+				return false;
+			}
+
+
+
+			if(fname == ""){
+				document.getElementById('e1').innerHTML =" ** Please fill the Full name field";
+				return false;
+			}
+			if((fname.length <= 2) || (fname.length > 20)) {
+				document.getElementById('e1').innerHTML =" ** Full name lenght must be between 2 and 20";
+				return false;	
+			}
+			if(!isNaN(fname)){
+				document.getElementById('e1').innerHTML =" ** only characters are allowed";
+				return false;
+			}
+
+
+
+
+            if(mobileNumber == ""){
+				document.getElementById('e3').innerHTML =" ** Please fill the mobile NUmber field";
+				return false;
+			}
+			if(isNaN(mobileNumber)){
+				document.getElementById('e3').innerHTML =" ** user must write digits only not characters";
+				return false;
+			}
+			if(mobileNumber.length!=10){
+				document.getElementById('e3').innerHTML =" ** Mobile Number must be 10 digits only";
+				return false;
+			}
+
+
+
+
+
+
+
+			if(pass == ""){
+				document.getElementById('e2').innerHTML =" ** Please fill the password field";
+				return false;
+			}
+			if((pass.length <= 5) || (pass.length > 20)) {
+				document.getElementById('e2').innerHTML =" ** Passwords lenght must be between  5 and 20";
+				return false;	
+			}
+
+
+
+
+		
+
+
+			if(emails == ""){
+				document.getElementById('e4').innerHTML =" ** Please fill the email  field";
+				return false;
+			}
+			if(emails.indexOf('@') <= 0 ){
+				document.getElementById('e4').innerHTML =" ** @ Invalid Position";
+				return false;
+			}
+
+			if((emails.charAt(emails.length-4)!='.') && (emails.charAt(emails.length-3)!='.')){
+				document.getElementById('e4').innerHTML =" ** . Invalid Position";
+				return false;
+			}
+            else{
+                confirm(" Thanks,Donation Successfully...! Come Againe.");
+            }
+		}
+
+	</script>
+
+    <script>
+        function doler1(){
+
+            confirm("Thanks, You Selected 25$ For Donetion To Us.")
+        }
+    </script>
+    <script>
+        function doler2(){
+
+            confirm("Thanks, You Selected 50$ For Donetion To Us.")
+        }
+    </script>
+    <script>
+        function doler3(){
+
+            confirm("Thanks, You Selected 75$ For Donetion To Us.")
+        }
+    </script>
+    <script>
+        function doler4(){
+
+            confirm("Thanks, You Selected 100$ For Donetion To Us.")
+        }
+    </script>
+
+
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+crossorigin="anonymous"></script>
+
+
+</body>
+</html>
