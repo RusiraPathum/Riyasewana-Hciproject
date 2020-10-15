@@ -1,0 +1,132 @@
+body {
+    background-image: url('../img/login_image/img4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0 0.9rem 1.5rem 0 rgba(0,0,0,1);
+    position: relative;
+    top: 100px;
+    padding: 0 5px;
+}
+
+.lead {
+    fron-size: 30px;
+}
+
+input[type="email"],
+input[type="password"]{
+
+    border-radius: 50px;
+    padding: 20px;
+}
+.btn{
+    display: inline-block; 
+    margin-right: 20px;
+}
+
+.btn1 {
+    border-radius: 50px;
+    padding: 8px 0;
+    width: 100%;
+    
+}
+
+.btn2 {
+    border-radius: 50px;
+    padding: 8px 0;
+    background-color: rgb(6, 187, 6);
+
+    
+}
+
+.btn3 {
+    border-radius: 50px;
+    padding: 3px 0;
+    background-color: rgb(6, 187, 6);
+    margin-right: 0.5px;
+    
+    
+}
+
+.btn4 {
+    border-radius: 50px;
+    padding: 3px 0;
+    background-color: rgb(221, 16, 9);
+    margin-left: 90px;
+    
+}
+.btn5 {
+    border-radius: 50px;
+    padding: 3px 0;
+    background-color: rgb(38, 5, 226);
+    margin-left: 0px;
+    
+}
+.btn6 {
+    border-radius: 50px;
+    padding: 3px 0;
+    background-color: goldenrod;
+    
+}
+
+.btn2:hover {
+    background-color: rgb(24, 236, 24);
+  }
+
+  .btn3:hover {
+    background-color: rgb(24, 236, 24);
+  }
+
+  .btn4:hover {
+    background-color: #c20b0b;
+  }
+  .btn5:hover {
+    background-color: rgb(35, 4, 107);
+  }
+  .btn6:hover {
+    background-color: rgb(189, 138, 10);
+  }
+  
+
+.google {
+    background-color: #cc3333;
+    border-radius: 50px;
+    padding: 8px 0;
+    color: #ccc;
+    
+}
+
+.facebook {
+    background-color: #3b5998;
+    border-radius: 50px;
+    padding: 8px 0;
+    color: #ccc;
+}
+.word_1 {
+    color: #c20b0b;
+    margin-bottom: 4px;
+}
+.word_3 {
+    color: #c20b0b;
+    margin-bottom: 5px;
+}
+.card-title {
+
+    color: #fc0505;
+}
+
+.card-title_1 {
+
+    color: #fc0505;
+}
+
+.card-title_2 {
+
+    color: #fc0505;
+}
