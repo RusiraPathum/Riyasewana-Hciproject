@@ -41,8 +41,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contribute.html">Contribute</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Login</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Login
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="profile.html">My Profile</a>
+                            <a class="dropdown-item" href="index.html">Registration</a>
+                            <a class="dropdown-item" href="Login.html">Login</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="freeadd" href="addpost.html">Post FREE Vehicle AD</a>
@@ -258,7 +266,8 @@
                     <a href="addpost.html"><i class="fas fa-plus-square mr-2"></i>Add a Post</a>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 co-12 div-2" data-aos="fade-left">
+            <div class="col-lg-6 col-md-6 col-sm-12 co-12 div-2" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
                 <img src="./img/img/addpost/call_girl.png" alt="">
             </div>
         </div>
@@ -285,32 +294,32 @@
     </section> -->
     <!--End RECENT VEHICLES -->
 
-    
-<br><br><br>
 
-<div data-aos="fade-right">
-    <button class="openChatBtn" onclick="openForm()"><span><i class="far fa-comment-dots"></i></span></button>
-    <div class="openChat">
-        <form>
-            <h1>Live Chart</h1>
-            <hr>
-            <!-- <label for="msg"><b>Message</b></label> -->
-            <textarea placeholder="Type message.." name="msg" required></textarea>
-            <div class="row">
-                <div class="col-6">
-                    <button type="submit" class="btn btn-primary">Send</button>
+    <br><br><br>
+
+    <div data-aos="fade-right">
+        <button class="openChatBtn" onclick="openForm()"><span><i class="far fa-comment-dots"></i></span></button>
+        <div class="openChat">
+            <form>
+                <h1>Live Chart</h1>
+                <hr>
+
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+                <div class="row">
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-danger" onclick="closeForm()">
+                            Close
+                        </button>
+                    </div>
                 </div>
-                <div class="col-6">
-                    <button type="button" class="btn btn-danger" onclick="closeForm()">
-                        Close
-                    </button>
-                </div>
-            </div>
 
 
-        </form>
+            </form>
+        </div>
     </div>
-</div>
     <!--Start Footer Section -->
     <footer class="container-fluid page-footer font-small pt-4 bg-dark text-light">
         <!-- Footer Links -->
@@ -414,7 +423,7 @@
         <!-- Footer Links -->
     </footer>
 
-    
+
 
     <!--End Footer Section -->
 
