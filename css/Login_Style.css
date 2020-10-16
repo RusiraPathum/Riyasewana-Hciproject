@@ -28,6 +28,8 @@ input[type="password"]{
 .btn{
     display: inline-block; 
     margin-right: 20px;
+    
+
 }
 
 .btn1 {
@@ -40,7 +42,7 @@ input[type="password"]{
 .btn2 {
     border-radius: 50px;
     padding: 8px 0;
-    background-color: rgb(6, 187, 6);
+    background-color: rgb(29, 211, 214);
 
     
 }
@@ -48,7 +50,7 @@ input[type="password"]{
 .btn3 {
     border-radius: 50px;
     padding: 3px 0;
-    background-color: rgb(6, 187, 6);
+    background-color: rgb(7, 209, 212);
     margin-right: 0.5px;
     
     
@@ -64,33 +66,34 @@ input[type="password"]{
 .btn5 {
     border-radius: 50px;
     padding: 3px 0;
-    background-color: rgb(38, 5, 226);
-    margin-left: 0px;
+    background-color: rgb(7, 209, 212);
     
 }
 .btn6 {
     border-radius: 50px;
     padding: 3px 0;
-    background-color: goldenrod;
+    background-color:rgb(10, 136, 138);
+    
     
 }
 
 .btn2:hover {
-    background-color: rgb(24, 236, 24);
+    background-color: rgb(23, 163, 165);
   }
 
   .btn3:hover {
-    background-color: rgb(24, 236, 24);
+    background-color:rgb(50, 181, 184);
   }
 
   .btn4:hover {
     background-color: #c20b0b;
   }
   .btn5:hover {
-    background-color: rgb(35, 4, 107);
+    background-color: rgb(18, 152, 155);
   }
   .btn6:hover {
-    background-color: rgb(189, 138, 10);
+    background-color: rgb(10, 84, 85);
+    
   }
   
 
@@ -109,11 +112,11 @@ input[type="password"]{
     color: #ccc;
 }
 .word_1 {
-    color: #c20b0b;
+    color: #1a0505;
     margin-bottom: 4px;
 }
 .word_3 {
-    color: #c20b0b;
+    color: #2b0d0d;
     margin-bottom: 5px;
 }
 .card-title {
