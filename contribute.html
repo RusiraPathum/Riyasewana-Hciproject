@@ -7,9 +7,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
     crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="css/contribute_style.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Contribute Form</title>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <style type="text/css">
+    	h3{
+    		font-family: lucida Handwriting;
+    		text-align: center;
+    	}
+    </style>
+
+
 </head>
 <body>  
 
@@ -51,22 +64,22 @@
                     <div class="card-body">
                         <div class="card-title lead text-center my-4">Please Countribute To Us</div>
                         <form>
-                            <p style="color: rgb(2, 71, 68);">----------------------------------Give To Reyasewana----------------------------------</p>
+                            <p style="color: rgb(2, 71, 68);">------------------------------------------Give To Reyasewana---------------------------------------</p>
                            <div class="Button">
                                 <div class="form-group">
-                                    <button onclick="doler1()" class="btn btn-lg btn-block cBtn">
+                                    <button type="button" onclick="donate1()" id="submit" class="btn btn-lg btn-block cBtn">
                                         $25
                                     </button>
                                     
-                                    <button onclick="doler2()" class="btn btn-lg btn-block cBtn">
+                                    <button  type="button" onclick="donate2()" class="btn btn-lg btn-block cBtn">
                                         $50
                                     </button>
 
-                                    <button  onclick="doler3()" class="btn btn-lg btn-block cBtn">
+                                    <button type="button" onclick="donate3()" class="btn btn-lg btn-block cBtn">
                                         $75
                                     </button>
 
-                                    <button onclick="doler4()" class="btn btn-lg btn-block cBtn">
+                                    <button type="button" onclick="donate4()" class="btn btn-lg btn-block cBtn">
                                         $100
                                     </button>
                                 </div>
@@ -102,27 +115,27 @@
                                 </form>
                            </div>
                            <hr class="my-3">
-                           <p style="color: rgb(2, 71, 68);">----------------------Would You Like To Setup A Recurring Gift?----------------------</p>
+                           <p style="color: rgb(2, 71, 68);">---------------------------Would You Like To Setup A Recurring Gift?-----------------------</p>
                            <hr class="my-2">
 
                            <div class="setup">
                                <div class="form-group">
-                                    <button  class="btnS btn-lg btn-block sBtn">
+                                    <button type="button" onclick="onetime()" class="btnS btn-lg btn-block sBtn">
                                         One Time
                                     </button>
-                                    <button  class="btnS btn-lg btn-block sBtn">
+                                    <button type="button" onclick="Monthly()" class="btnS btn-lg btn-block sBtn">
                                         Monthly
                                     </button>
-                                    <button  class="btnS btn-lg btn-block sBtn">
+                                    <button type="button" onclick="Quarterly()" class="btnS btn-lg btn-block sBtn">
                                         Quarterly
                                     </button>
-                                    <button  class="btnS btn-lg btn-block sBtn">
+                                    <button type="button" onclick="Annualy()" class="btnS btn-lg btn-block sBtn">
                                         Annualy
                                     </button>
                                </div>
                            </div>
                            <hr class="my-3">
-                           <p style="color: rgb(5, 68, 19);">---------------------------------Contact Information---------------------------------</p>
+                           <p style="color: rgb(5, 68, 19);">------------------------------------------Contact Information----------------------------------------</p>
 
                             <hr class="my-2">
                             <p style="color: rgb(22, 4, 75);">Please fill in this form to countribute for us.</p>
@@ -167,7 +180,7 @@
                             </div>
                         
                             <div class="submitBtn my-4">
-                                <button onclick="validation()" type="button"class="btn2 btn-secondary btn-lg btn-block">
+                                <button onclick="validation()" id="btn1" type="button"class="btn2 btn-secondary btn-lg btn-block">
                                     Contribute
                                 </button>
                             </div>
@@ -287,8 +300,108 @@
     
 
     <script>
-		
 
+        function donate1(){
+
+
+            swal("Welcome back..!","To Riyasewana, You liked to donet 50$","success")
+            .then((value)=>{
+                swal("Enter your email address:",{
+                    content:"input",
+                })
+                .then((value)=>{
+                    swal("We sent donation details to this email",`${value}..! Please follow conditon to donate us.`,)
+                })
+            })
+
+    
+        
+        }
+
+        function donate2(){
+
+
+            swal("Welcome back..!","To Riyasewana, You liked to donet 50$","success")
+            .then((value)=>{
+                swal("Enter your email address:",{
+                    content:"input",
+                })
+                .then((value)=>{
+                    swal("We sent donation details to this email",`${value}..! Please follow conditon to donate us.`,)
+                })
+            })
+
+
+
+        }
+
+
+        function donate3(){
+
+
+            swal("Welcome back..!","To Riyasewana, You liked to donet 75$","success")
+            .then((value)=>{
+                swal("Enter your email address:",{
+                    content:"input",
+                })
+                .then((value)=>{
+                    swal("We sent donation details to this email",`${value}..! Please follow conditon to donate us.`,)
+                })
+            })
+
+
+
+        }
+
+        function donate4(){
+
+
+            swal("Welcome back..!","To Riyasewana, You liked to donet 100$","success")
+            .then((value)=>{
+                swal("Enter your email address:",{
+                    content:"input",
+                })
+                .then((value)=>{
+                    swal("We sent donation details to this email",`${value}..! Please follow conditon to donate us.`,)
+                })
+            })
+
+
+
+        }
+		
+    </script>
+    
+    <script>
+
+    function onetime(){ 
+
+        swal("One Time","Select donte to one tome..!","success")
+    
+    }
+
+    function Monthly(){ 
+
+        swal("Monthly","Select donte to monthly..!","success")
+
+    }   
+    
+    function Quarterly(){ 
+
+        swal("Quarterly","Select donte to quarterly..!","success")
+
+    } 
+
+    function Annualy(){ 
+
+        swal("Annualy","Select donte to annualy..!","success")
+
+    }
+
+
+    </script>
+
+    <script>
 		function validation(){
 
             var select = document.getElementById('select$').value;
@@ -369,11 +482,22 @@
 				return false;
 			}
             else{
-                confirm(" Thanks,Donation Successfully...! Come Againe.");
+                var fun1 = function (){
+
+                    swal("Welcome Back..!!","To Riyasewana","success")
+                
+                }
+
+                var some_value = fun1();
+
             }
 		}
 
-	</script>
+    </script>
+    
+
+
+
 
     <script>
         function doler1(){
@@ -401,8 +525,6 @@
     </script>
 
 
-
-
     
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -416,6 +538,8 @@ crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
 integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
 crossorigin="anonymous"></script>
+
+
 
 
 </body>

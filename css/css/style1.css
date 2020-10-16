@@ -25,7 +25,7 @@
     font-size: 1rem;
     animation: form-btn 2s infinite;
 }
-
+/* 
 @keyframes form-btn {
     0% {
         box-shadow: 0 0 0 0px rgba(0, 162, 255, 0.452);
@@ -34,7 +34,7 @@
     100% {
         box-shadow: 0 0 0 20px rgba(0, 162, 255, 0.144);
     }
-}
+} */
 
 .sumbutton .btn:hover {
     color: #000000;

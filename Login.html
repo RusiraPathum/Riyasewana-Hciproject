@@ -9,13 +9,23 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="css/Login_Style.css">
     <title>Login Form</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <style type="text/css">
+    	h3{
+    		font-family: lucida Handwriting;
+    		text-align: center;
+    	}
+    </style>
+
+
 </head>
 <body>
     
     <div class="container">
         <div class="row">
             <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-                <div class="card" style="background-color: rgba(245, 245, 245, 0.8);">
+                <div class="card" style="background-color: rgba(245, 245, 245, 0.5);">
                     <div class="card-body">
                         <div class="card-title lead text-center my-5">Sign In To User Account</div>
                         <form>
@@ -30,7 +40,7 @@
                                 </button>
                             </div>
                             <hr class="my-4">
-                            <p style="color: lightseagreen;">Please fill in this form to log in Your account.</p>
+                            <p style="color: rgb(16, 44, 43);">Please fill in this form to log in Your account.</p>
 
                             <div class="word_1">User Name</div>
                             <div class="form-group">
@@ -44,13 +54,13 @@
                                  required class="form-control"
                                 placeholder="Enter Your Password" required autofocus>
                             </div>
-                            <div style="color: blue;"" class="custom-checkbox custom-control mb-3">
+                            <div style="color: rgb(34, 14, 13);" class="custom-checkbox custom-control mb-3">
                                 <input type="checkbox" checked="checked">
                                 <label class="custom-contro-lable"
                                 for="rememberMe">Remember Password</label> 
                             </div>
                             <div class="forgetPW">
-                                <a href="SearchUser.html" id="lnkforget" class="hyperlink" style="float: right; margin-right: 5px;margin-bottom: 4px;">Forgot Password?</a>
+                                <a href="SearchUser.html" id="lnkforget" class="hyperlink" style="float: right;color: black; margin-right: 5px;margin-bottom: 4px;">Forgot Password?</a>
                             </div>
                             <div>
                                 <button onclick="signIn()" type="button" class="btn1 btn-primary btn-lg btn-block">
@@ -77,19 +87,21 @@
 
     <script>
         function loginWithGoogle() {
-          confirm("Loging succesesfull..! You log with your google account");
+        
+          swal("Loging succesesfully","You log with your google account.","success")
         }
         </script>
 
     <script>
          function loginWithFB() {
-            confirm("Loging succesesfull..! You log with your facebook account");
+            
+            swal("Loging succesesfully","You log with your facebook account.","success")
             }
         </script>
 
     <script>
         function signup() {
-        confirm("It is quick and easy...");
+        swal("Wellcome to Registration page","It is quick and easy....","success")
         window.location.href= 'index.html';
         }
     </script>
@@ -100,10 +112,12 @@
             var pw = document.getElementById("PW").value;
            if(un == "abc@gmail.com" && pw == "123jklmB@")
            {
-               confirm("Mr:Charuka Tharindhu, Wellcome to Riyasewana");
+               
+               swal("Mr:Charuka Tharindhu","Wellcome to Riyasewana","success")
+               window.location.href= 'homepage.html';
            }
            else
-                confirm("User Name Or Password incorect, Try Again..!!");
+                swal("User Name Or Password incorect","Try Again..!!","error")
 
            }
        </script>

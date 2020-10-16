@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riyasewana | Favorites</title>
+    <title>Riyasewana | change pw</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="./vender/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -16,11 +16,10 @@
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/favorite.css">
+    <link rel="stylesheet" href="css/changepw.css">
     <link rel="stylesheet" href="./vender/bootstrap/css/aos.css">
 
 
@@ -41,25 +40,17 @@
                         <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="addpost.html">Post a Free Ad</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="contactus.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contribute.html">Contribute</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Login
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="profile.html">My Profile</a>
-                            <a class="dropdown-item" href="homepage.html">Logout</a>
-                        </div>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="freeadd" href="addpost.html">Post FREE Vehicle AD</a>
-                </li>
-                </ul>
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
             </div>
         </div>
     </nav>
@@ -76,13 +67,17 @@
                 <!-- sideMenu -->
                 <div class="box-1">
                     <br>
-                    <h5 class="text-center">Welcome favorites page</h5>
+                    <h5>Welcome Nawod</h5>
                     <br><br>
-                    <a class="btn btn-info float-right mt-1 mr-5 mb-2 " href="profile.html">My account</a>
-                    <a class="btn btn-info float-right mt-1 mr-5 mb-2 " href="addpost.html" > Post a Add</a>
-                    <a class="btn btn-dark float-right mt-1 mr-5 mb-2 " href="favorite.html" >Favorites</a>
-                    <a class="btn btn-info float-right mt-1 mr-5 mb-2 " href="Edit_profile.html" >Edit profile</a>
-                    <a class="btn btn-info float-right mt-1 mr-5 mb-2 " href="homepage.html">Logout</a>
+                    <button class="btn btn-info float-right mt-1 mr-5 mb-2 ">My account</button>
+                    <a href="editProfiledetails.html"><button class="btn btn-info float-right mt-1 mr-5 mb-2 ">Edit
+                            profile</button></a>
+                    <a href="favorite.html"><button
+                            class="btn btn-info float-right mt-1 mr-5 mb-2 ">Favorites</button></a>
+                    <a href="changepw.html"><button class="btn btn-dark float-right mt-1 mr-5 mb-2 ">change
+                            pssword</button></a>
+                    <a href="homepage.html"><button class="btn btn-info float-right mt-1 mr-5 mb-2 ">Logout</button></a>
+
 
 
 
@@ -92,99 +87,49 @@
                 <div class="box-2">
                     <div class="booksList">
                         <div class="topic">
-                            <h5>My favorites</h5>
-                            <hr>
+                            <h2>Edit profile</h2>
+                            <br><br>
+                            <form class="form-inline1">
+                                <table>
+
+
+                                    <tr>
+                                        <td><label>Old password:</td>
+                                        <td> <input class="form-control mr-sm-2" id="old" type="password">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label>New password: </label>
+                                        </td>
+                                        <td><input class="form-control mr-sm-2" id="newpw" type="password"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label> Re-enter password: </label>
+                                        </td>
+                                        <td><input class="form-control mr-sm-2" id="re" type="password"></td>
+
+                                    </tr>
+
+
+                                </table>
+                                <div class="btn float-right" id="resetbtn">
+                                    <button type="submit" onclick="popUp()"
+                                        class="btn btn-success mt-1  mr-5 mb-5 mr-sm-5" type="submit">Change
+                                        password</button>
+                                </div>
+
+                            </form>
+                            <br><br>
+
+
                         </div>
-
-                        <!--Start Card Section -->
-
-                        <div class="a1000">
-                            <div class="img1">
-                                <img class="card-img-top" src="./img/img/buycarpage/img15.jpg" alt="">
-                            </div>
-                            <div class="bookInfo">
-                                <h3>Honda Vezel Z Grade(Hybrid)</h3>
-                                <span class="author">Model： DAA-RU3</span>
-                                <span class="author">Dimension： 4295×1770×1605mm</span>
-                                <span class="author">Body Type： SUV</span>
-                                <span class="author">Weight：1300kg</span>
-                                <span class="author">Riding Capacity：5</span>
-                            </div>
-                            <div class="remove">
-                                <button class="btn btn-danger mt-4 float-right mr-5 mb-5 "
-                                    onclick="popUp()">remove</button>
-                            </div>
-                        </div>
-
-                        <div class="clear"></div>
-
-                        <div class="a1000-1500">
-                            <div class="img1">
-                                <img class="card-img-top" src="./img/img/buycarpage/img16.jpg" alt="">
-                            </div>
-                            <div class="bookInfo">
-                                <h3>Toyota KDH(Luxury Van)</h3>
-                                <span class="author">Engine Displacement :2982 cc</span>
-                                <span class="author">Maximum Power :134.1 BHP @ 3400 rpm</span>
-                                <span class="author">Maximum Torque :300 NM @ 1200 rpm</span>
-                                <span class="author">Gearbox :4-speed Automatic/5-speed Manual Gearbox</span>
-
-                            </div>
-                            <div class="remove">
-                                <button class="btn btn-danger mt-4 float-right mr-5 mb-5 "
-                                    onclick="popUp()">remove</button>
-                            </div>
-                        </div>
-
-                        <div class="clear"></div>
-
-                        <div class="a1000-1500">
-                            <div class="img1">
-                                <img class="card-img-top" src="./img/img/buycarpage/img7.jpg" alt="">
-                            </div>
-                            <div class="bookInfo">
-                                <h3>Toyota KDH(Luxury Van)</h3>
-                                <span class="author">Engine Displacement :2982 cc</span>
-                                <span class="author">Maximum Power :134.1 BHP @ 3400 rpm</span>
-                                <span class="author">Maximum Torque :300 NM @ 1200 rpm</span>
-                                <span class="author">Gearbox :4-speed Automatic/5-speed Manual Gearbox</span>
-
-                            </div>
-                            <div class="remove">
-                                <button class="btn btn-danger mt-4 float-right mr-5 mb-5 "
-                                    onclick="popUp()">remove</button>
-                            </div>
-                        </div>
-
-                        <div class="clear"></div>
-
-                        <div class="a1000-1500">
-                            <div class="img1">
-                                <img class="card-img-top" src="./img/img/buyvanpage/img3.jpg" alt="">
-                            </div>
-                            <div class="bookInfo">
-                                <h3>Toyota KDH(Luxury Van)</h3>
-                                <span class="author">Engine Displacement :2982 cc</span>
-                                <span class="author">Maximum Power :134.1 BHP @ 3400 rpm</span>
-                                <span class="author">Maximum Torque :300 NM @ 1200 rpm</span>
-                                <span class="author">Gearbox :4-speed Automatic/5-speed Manual Gearbox</span>
-
-                            </div>
-                            <div class="remove">
-                                <button class="btn btn-danger mt-4 float-right mr-5 mb-5 "
-                                    onclick="popUp()">remove</button>
-                            </div>
-                        </div>
-
-                        <div class="clear"></div>
-
-                        <!--End Card Section -->
                     </div>
                 </div>
-            </div>
         </section>
     </div>
-
+    <br><br><br><br><br>
 
 
     <!-- Footer -->
@@ -210,16 +155,16 @@
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold ">Useful links</h6>
                     <p>
-                        <a class="text-decoration-none" href="homepage.html">Home</a>
+                        <a class="text-decoration-none" href="#!">Home</a>
                     </p>
                     <p>
-                        <a class="text-decoration-none" href="addpost.html">Post FREE Vehicle AD </a>
+                        <a class="text-decoration-none" href="#!">Post a Ad Free </a>
                     </p>
                     <p>
-                        <a class="text-decoration-none" href="contactus.html">Contact us</a>
+                        <a class="text-decoration-none" href="#!">Contact us</a>
                     </p>
                     <p>
-                        <a class="text-decoration-none" href="contribute.html">Contribute</a>
+                        <a class="text-decoration-none" href="#!">Contribute</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -303,9 +248,48 @@
     <!--Bak to up-->
     <script src="./vender/jquery/backtoup.js"></script>
 
+    <!-- <script>
+        function popUp() {
+            var old;
+            var newpw;
+            var re;
+
+            var old = document.getElementById('old').value;
+            var newpw = document.getElementById('newpw').new;
+            var re = document.getElementById('re').value;
+
+            if (old == null || old == "" ||
+            newpw == null || newpw == "" ||
+            re == null || re == "") {
+                sweetAlert("Oops...", "Some details are missing, Please fill!", "error");
+            } else{
+                swal("Successfully!", "password changed!", "success");
+            }
+
+        }
+    </script> -->
+
     <script>
         function popUp() {
-            swal("Successfull!", "item deleted form favorite!", "success");
+
+            var old;
+            var newpw;
+            var re;
+
+            var old = document.getElementById('old').value;
+            var newpw = document.getElementById('newpw').value;
+            var re = document.getElementById('re').value;
+
+            if (old == null || old == "" ||
+                newpw == null || newpw == "" ||
+                re == null || re == "") {
+                sweetAlert("Oops...", "Some details are missing, Please fill!", "error");
+            }
+            else if (re != newpw)
+                sweetAlert("Oops...", "Your new Password not matching, Please try again!", "error");
+            else {
+                swal("Successfully!", "password changed!", "success");
+            }
         }
     </script>
 

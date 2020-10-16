@@ -22,6 +22,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <style type="text/css">
+    	h3{
+    		font-family: lucida Handwriting;
+    		text-align: center;
+    	}
+    </style>
+
 <style>
     input:invalid {
   border: 2px solid red;
@@ -66,7 +74,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-9 col-md-7 col-lg-7 mx-auto">
-                <div class="card" style="background-color: rgba(245, 245, 245, 0.6);">
+                <div class="card" style="background-color: rgba(245, 245, 245, 0.4);">
                     <div class="card-body">
                         <div class="card-title lead text-center my-5">Edit User Profile</div>
 
@@ -98,7 +106,7 @@
                         <hr class="my-5">
 
     
-                        <form class="editProfile_form">
+                        <form id="myForm" class="editProfile_form">
                            
                            <div class="row">
                                 <div class="col-md-6 float-md-left">
@@ -581,7 +589,7 @@
                                 </div>
     
                                 <div>
-                                    <button style="width: 30%; float: left;" type="button" class="btn btn-primary btn-lg btn-block">
+                                    <button  style="width: 30%; float: left;" value="click" onclick="myFun1(); myFun2();" type="button" class="btn btn-primary btn-lg btn-block">
                                         Cancel
                                     </button>
                                 </div>
@@ -788,7 +796,8 @@
 
             img.src="https://globalhealthcaresystems.org/wp-content/uploads/2020/06/78-785827_user-profile-avatar-login-account-male-user-icon.png";
 
-            confirm("Your Profile Picture Remove Sucssesed!!...");
+            
+            swal("Removed","Your Profile Picture Remove Sucssesed!!...","success");
 
         }
     </script>
@@ -822,7 +831,17 @@
         });
     </script>
 
-  
+    <script>
+
+        function myFun1() {
+            document.getElementById("myForm").reset();
+         }
+
+        function myFun2(){
+            swal("Reset","Form reset successed...!!","success")
+        }
+
+    </script>
 
 
 
@@ -1035,7 +1054,8 @@ crossorigin="anonymous"></script>
             return false;
         }else{
 
-            confirm("User Profile Update SuccessFully......");
+
+            swal("Profile Updated","User Profile Update SuccessFully......!!!","success");
         }
 
     
@@ -1043,6 +1063,8 @@ crossorigin="anonymous"></script>
     }
 
 </script>
+
+
 
 </body>
 </html>
